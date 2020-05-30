@@ -1,0 +1,6 @@
+.project
+.classpath
+.settings/
+src/test/resources/Reports
+target/test-classes/Reports
+reports

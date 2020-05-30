@@ -1,0 +1,254 @@
+<html>
+<head>
+<title>TestNG:  Desktop2 POC</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Desktop2 POC</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 04 11:33:58 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>4092 seconds (4092964 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProActionsValidationForICStatus_IC()'><b>TC_DocProActionsValidationForICStatus_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Uncommissioned,Archived,Commissioned,Failed Commissioned,Delivered,Downloaded To Plant</td>
+<td></td>
+<td>343</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProArchiveTileValidation_Tools()'><b>TC_DocProArchiveTileValidation_Tools</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Status, 6503587324-000100, Order-Item</td>
+<td></td>
+<td>79</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProCommissioningTileValidation_Tools()'><b>TC_DocProCommissioningTileValidation_Tools</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Status, Order-Item, 6504212203-000100</td>
+<td></td>
+<td>69</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProDocumentationStatusCheckboxesValidation_CDDocs()'><b>TC_DocProDocumentationStatusCheckboxesValidation_CDDocs</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6503329332-000800, StatusExistence, Preliminary;Approval;Full Submittal;Record;As-Built;Operations & Maintenance Manuals</td>
+<td></td>
+<td>47</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProDocumentationStatusCheckboxesValidation_CDDocs()'><b>TC_DocProDocumentationStatusCheckboxesValidation_CDDocs</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6503329332-000800, CheckboxVerification, Preliminary;Approval;Full Submittal;Record;As-Built;Operations & Maintenance Manuals</td>
+<td></td>
+<td>49</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProInitialValidation_CDDocs()'><b>TC_DocProInitialValidation_CDDocs</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes</td>
+<td></td>
+<td>14</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProInitialValidation_IC()'><b>TC_DocProInitialValidation_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, oshahan</td>
+<td></td>
+<td>55</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProInitialValidation_Tools()'><b>TC_DocProInitialValidation_Tools</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes</td>
+<td></td>
+<td>14</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderDownload_IC()'><b>TC_DocProOrderDownload_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6502928457-000200</td>
+<td></td>
+<td>77</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderModuleLogDetails_IC()'><b>TC_DocProOrderModuleLogDetails_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, 6502794297-000700, Order, 05104996-0008, 01, MCC2100-SCII, BORDER STATES ELECTRIC SUPPLY, THARALDSON, Tecate ETO, UNCOMMISSIONED, false, , </td>
+<td></td>
+<td>53</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderModuleLogDetails_IC()'><b>TC_DocProOrderModuleLogDetails_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, 6503587324-000200, Order, 05004825-0006, 00, MCC2100-ENG, HORIZON SOLUTIONS LLC, ISC CR2 TESTING, Richland Center, DOWNLOADED TO PLANT, true, , </td>
+<td></td>
+<td>53</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderModuleLogDetails_IC()'><b>TC_DocProOrderModuleLogDetails_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, 6504205043-000100, ModuleLog, , , , , , , , , ICDB;Download;Upload;Delivery, Completed;Completed;Completed;Completed</td>
+<td></td>
+<td>143</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderModuleLogDetails_IC()'><b>TC_DocProOrderModuleLogDetails_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, 6502752749-000100, ModuleLog, , , , , , , , , ICDB;Download;Upload, Completed;Completed;Failed</td>
+<td></td>
+<td>120</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderSearch_CDDocs()'><b>TC_DocProOrderSearch_CDDocs</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6503329332-000800</td>
+<td></td>
+<td>28</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderSearch_CDDocs()'><b>TC_DocProOrderSearch_CDDocs</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order, 6504169346</td>
+<td></td>
+<td>31</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderSearch_CDDocs()'><b>TC_DocProOrderSearch_CDDocs</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item-Revision, 6502022356-000100</td>
+<td></td>
+<td>41</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderSearch_IC()'><b>TC_DocProOrderSearch_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6504226895-000600, , </td>
+<td></td>
+<td>29</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderSearch_IC()'><b>TC_DocProOrderSearch_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order, 6504226895, , </td>
+<td></td>
+<td>32</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderSearch_IC()'><b>TC_DocProOrderSearch_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Item, 000600, , </td>
+<td></td>
+<td>48</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderSearch_IC()'><b>TC_DocProOrderSearch_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Plant, , 1120, </td>
+<td></td>
+<td>48</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderSearch_IC()'><b>TC_DocProOrderSearch_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Material, , , MCC2100-CSP2</td>
+<td></td>
+<td>49</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderUpload_IC()'><b>TC_DocProOrderUpload_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6503329332-000600, "ic.mdb" "1.enet", Success</td>
+<td></td>
+<td>125</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderUpload_IC()'><b>TC_DocProOrderUpload_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6502832839-001500, "ic.mdb" "1.dnt", Success</td>
+<td></td>
+<td>125</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderUpload_IC()'><b>TC_DocProOrderUpload_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6503329333-000100, "ic.mdb" "1.enet", Success</td>
+<td></td>
+<td>125</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderUpload_IC()'><b>TC_DocProOrderUpload_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6503587184-000200, "ic.mdb", Success</td>
+<td></td>
+<td>125</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderUpload_IC()'><b>TC_DocProOrderUpload_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6503956671-000200, "ic.mdb", Commissioning Failed</td>
+<td></td>
+<td>123</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderUpload_IC()'><b>TC_DocProOrderUpload_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6503329366-000300, "ic.mdb", ENET Missing</td>
+<td></td>
+<td>128</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderUpload_IC()'><b>TC_DocProOrderUpload_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6502832863-002100, "ic.mdb", DNT Missing</td>
+<td></td>
+<td>131</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProOrderUpload_IC()'><b>TC_DocProOrderUpload_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6503885825-000100, "ic.mdb" "1.enet", ACD MISSING</td>
+<td></td>
+<td>127</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProPlantChangeTileValidation_Tools()'><b>TC_DocProPlantChangeTileValidation_Tools</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6504175099-000100, Central Distribution Center;European Distribution Center;India Distribution Center;Monterrey Planta #2;Richland Center;Tecate ETO, Monterrey Planta #2</td>
+<td></td>
+<td>114</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProRequestDocumentCollection_CDDocs()'><b>TC_DocProRequestDocumentCollection_CDDocs</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6502985894-000400, Preliminary;Full Submittal;Operations & Maintenance Manuals</td>
+<td></td>
+<td>204</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProRequestDocumentPageValidation_CDDocs()'><b>TC_DocProRequestDocumentPageValidation_CDDocs</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order-Item, 6503329332-000800, HORIZON SOLUTIONS LLC, ISC DATA QUALITY 1, 000800, 02, MCC2100-ENG, ETO</td>
+<td></td>
+<td>44</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProRequestDocumentPageValidation_CDDocs()'><b>TC_DocProRequestDocumentPageValidation_CDDocs</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Order, 6504169346, Electrica A B S.A. De C.V., SILLETAS COEUR PALMAREJO, 000800;001200, 00;00, MCC2100-UNIT-SCI;MCC2100-UNIT-SCI, CTO;CTO</td>
+<td></td>
+<td>48</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProStatusChangeTileValidation_Tools()'><b>TC_DocProStatusChangeTileValidation_Tools</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Status, 6503587324-000100, Order-Item, Archived, Uncommissioned;Downloaded To Plant;Failed Commissioned;Commissioned;Delivered;Archived, Commissioned</td>
+<td></td>
+<td>103</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+<tr>
+<td title='scripts.DocPro.DocProScenarios_Test.TC_DocProStatusFilter_IC()'><b>TC_DocProStatusFilter_IC</b><br>Test class: scripts.DocPro.DocProScenarios_Test<br>Parameters: Yes, Uncommissioned,Archived,Commissioned,Failed Commissioned,Delivered,Downloaded To Plant</td>
+<td></td>
+<td>351</td>
+<td>scripts.DocPro.DocProScenarios_Test@59309333</td></tr>
+</table><p>
+</body>
+</html>

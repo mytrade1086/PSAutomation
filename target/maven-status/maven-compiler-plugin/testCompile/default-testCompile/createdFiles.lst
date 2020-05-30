@@ -1,0 +1,4 @@
+scripts\ProMS\ProMS_PageObject.class
+scripts\DCRM\DCRM_PageObject.class
+scripts\DCRM\DCRMScenarios_Test.class
+scripts\ProMS\ProMSScenarios_Test.class
