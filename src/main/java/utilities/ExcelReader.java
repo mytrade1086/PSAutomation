@@ -10,7 +10,10 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -35,6 +38,8 @@ public class ExcelReader {
 	Sheet testDataSheet, credentialSheet, configurationSheet;
 	Workbook wb = null;
 	Map<String, String> hm, configMap, credentialMap;
+
+	LinkedHashMap<String, String> excelDataHashmap; // Added for storing data in hashmap
 
 	public ExcelReader() {
 		// File file = new File("./src/testData/Driver.xlsx");
@@ -68,7 +73,7 @@ public class ExcelReader {
 	public int getRowCount(Sheet sheetRef) {
 		int rowCount = sheetRef.getLastRowNum() - sheetRef.getFirstRowNum();
 
-		System.out.println("total rows are(1 added)" + (rowCount + 1));
+		//System.out.println("total rows are(1 added)" + (rowCount + 1));
 		return rowCount + 1;
 	}
 
@@ -82,10 +87,14 @@ public class ExcelReader {
 			if (getCellValue(cellNew) == null || getCellValue(cellNew).equals(""))
 				break;
 			else
-				colNew = colNew + 1;
+			// added for hashmap approach 31/5/2020
+			if (i > 2) {
+				excelDataHashmap.put(getCellValue(cellNew), null);
+			}
+			colNew = colNew + 1;
 		}
 		// return colCount;
-		System.out.println("colNew returns" + colNew);
+		//System.out.println("colNew returns" + colNew);
 		return colNew;
 	}
 
@@ -289,9 +298,13 @@ public class ExcelReader {
 	 * }
 	 */
 
+	@SuppressWarnings("unused")
 	@DataProvider(name = "userData")
 	public Object[][] getTestData(Method name) throws Exception {
-		String strTestCase = name.getName();  //mycase
+		String strTestCase = name.getName(); // mycase
+
+		// Added by Sumit 30/5/2020
+		excelDataHashmap = new LinkedHashMap<String, String>();
 
 		System.out.println("test case name is " + strTestCase);
 		String tstName = null;
@@ -300,7 +313,7 @@ public class ExcelReader {
 		Object[][] data = null;
 
 		int rowCount = getRowCount(testDataSheet);
-        System.out.println("rowCount is " + rowCount); //4
+		System.out.println("rowCount is " + rowCount); // 4
 
 		for (int i = 0; i < rowCount; i++) {
 			Row row = testDataSheet.getRow(i);
@@ -315,12 +328,13 @@ public class ExcelReader {
 			if (tstName.equals(strTestCase)) {
 				k = getDataRowCount(i, rowCount); // 1
 
-				System.out.println("getDataRowCount returns" + k);//2 data row
+				System.out.println("getDataRowCount returns" + k);// 2 data row
 				int vColNo = getColCountForRow(row);// 2
-				System.out.println("getColCountForRow returns" + vColNo);//5 cls
-				data = testData(i, k, vColNo);  // i=1 is row where test case  name matched  , k=2 is data rows for the cases,vcolNo=5 is number of columns in matched row
+				System.out.println("getColCountForRow returns" + vColNo);// 5 cls
+				data = testData(i, k, vColNo); // i=1 is row where test case name matched , k=2 is data rows for the
+												// cases,vcolNo=5 is number of columns in matched row
 
-				System.out.println("data returns" + data);
+//				System.out.println("data returns" + data);
 
 				vFlag = 1;
 				break;
@@ -329,15 +343,29 @@ public class ExcelReader {
 			else
 				vFlag = 0;
 		}
-		
+
 		System.out.println("demo line");
 
 		if (vFlag == 0)
 			System.out.println("Searched case not present in Testdata sheet");
-		
-		//System.out.println(Arrays.deepToString(data));
 
-		return data;
+		Object[][] data2 = new Object[data.length][1];
+	//	System.out.println(data2.length + "  " + data2[0].length);
+
+		for (int row = 0; row < data.length; row++) {
+			LinkedHashMap<String, String> excelDataHashmap2=new LinkedHashMap<String, String>(excelDataHashmap);
+			
+			for (int col = 1; col < data[0].length; col++) {
+				for (Map.Entry<String, String> entry : excelDataHashmap2.entrySet()) {
+		//			System.out.print(data[row][col] + " ");
+					entry.setValue((String) data[row][col++]);
+				}
+				data2[row][0] = excelDataHashmap2;
+				break;
+			}
+		}
+		System.out.println("demo line2");
+		return data2;
 	}
 
 	public Object[][] testData(int sRow, int eRow, int colNew) throws Exception {
@@ -352,7 +380,7 @@ public class ExcelReader {
 			row = testDataSheet.getRow(i);
 			for (int j = 2; j < colNew; j++) {
 				Cell cell = row.getCell(j);
-				if (getCellValue(cell).equals("Yes")) {
+				if (getCellValue(cell).toUpperCase().equals("YES")) {
 					nRow = nRow + 1;
 
 				}
@@ -381,7 +409,7 @@ public class ExcelReader {
 			for (int j = 2; j < colNew; j++) {
 				Cell cell = row.getCell(j);
 				if (l == 0) {
-					if (getCellValue(cell).equals("Yes")) {
+					if (getCellValue(cell).toUpperCase().equals("YES")) {
 						excelData[k][l] = getCellValue(cell);
 
 					} else {
@@ -401,7 +429,7 @@ public class ExcelReader {
 						listOfValues = listOfValues + "," + getCellValue(nextCell);
 						v++;
 						nextRow = testDataSheet.getRow(v);
-						
+
 						nextCell = nextRow.getCell(j);
 					}
 					;

@@ -1,9 +1,10 @@
-package scripts.DCRM;
+package WT_Testcases;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.LinkedHashMap;
 
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -14,12 +15,11 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
+import WT_Pages.WT_LoginPage;
+import WT_Pages.WT_ReservationPage;
 import scripts.ProMS.ProMS_PageObject;
-import scripts.ProMS.WT_LoginPage;
-import scripts.ProMS.WT_ReservationPage;
-//public class DCRMScenarios_Test extends DCRM_PageObject {
 	
-	public class DCRMScenarios_Test extends WT_LoginPage {
+	public class WT_RegressionTest extends WT_LoginPage {
 	//WT_LoginPage
 
 	int inCt;
@@ -27,6 +27,7 @@ import scripts.ProMS.WT_ReservationPage;
 	String vApplication = "WebTours";
 	ProMS_PageObject pro;
 	WT_LoginPage wt; //not necessary
+	//WT_ReservationPage reg;
 
 	@BeforeClass
 	public void LaunchT2Q() throws InterruptedException {
@@ -106,16 +107,29 @@ import scripts.ProMS.WT_ReservationPage;
 	
 	
 	@Test(description = "myCase", dataProvider = "userData")
-public void myCase(LinkedHashMap<String,String> data) {		   
+public void myCase(LinkedHashMap<String,String> data) {				
+	System.out.println(data);
 		enterUsername(data.get("username"));
 		enterPassword(data.get("password"));
 		WT_ReservationPage res=ClickSignin();
-		res.verifyReservationPageVisible();			
+		Assert.assertTrue(res.verifyReservationPageVisible());		
 	}
 	
 	
+	@Test(description = "myCase2", dataProvider = "userData")
+public void myCase2(LinkedHashMap<String,String> data) {		
+		System.out.println(data);
+	}
 	
-	
-	
-	
+	@Test(description = "WT_Register", dataProvider = "userData")
+public void WT_Register(LinkedHashMap<String,String> data) {		
+		System.out.println(data);
+		enterUsername(data.get("username"));
+		enterPassword(data.get("password"));
+		WT_ReservationPage res=ClickSignin();		
+		Assert.assertTrue(res.verifyReservationPageVisible());	
+		res.clickOnewayTrip();
+		res.selectPassengerNum(data.get("selectPassengerNum"));
+		res.selectDepartingFrom(data.get("departing_from"));
+	}	
 }

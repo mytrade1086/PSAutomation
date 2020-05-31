@@ -3,15 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scripts.DCRM.DCRMScenarios_Test">
+      <class name="WT_Testcases.WT_RegressionTest">
         <methods>
-          <include name="LaunchT2Q"/>
-          <include name="myCase"/>
-          <include name="launchReport"/>
+          <include name="myCase2" invocation-numbers="0 1 2"/>
           <include name="afterMethod"/>
+          <include name="launchReport"/>
           <include name="BeforeMethod"/>
+          <include name="LaunchT2Q"/>
+          <include name="myCase" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- scripts.DCRM.DCRMScenarios_Test -->
+      </class> <!-- WT_Testcases.WT_RegressionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,4 +1,4 @@
-package scripts.ProMS;
+package WT_Pages;
 
 import java.io.IOException;
 

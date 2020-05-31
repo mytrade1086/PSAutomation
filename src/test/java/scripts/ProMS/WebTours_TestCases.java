@@ -1,4 +1,4 @@
-package scripts.DCRM;
+package scripts.ProMS;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -17,22 +17,17 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import scripts.ProMS.ProMS_PageObject;
 import scripts.ProMS.WT_LoginPage;
 import scripts.ProMS.WT_ReservationPage;
-//public class DCRMScenarios_Test extends DCRM_PageObject {
-	
-	public class DCRMScenarios_Test extends WT_LoginPage {
-	//WT_LoginPage
 
+public class WebTours_TestCases extends WT_LoginPage {
 	int inCt;
 	String vFileName;
 	String vApplication = "WebTours";
-	ProMS_PageObject pro;
-	WT_LoginPage wt; //not necessary
+	WT_LoginPage wt; // not necessary
 
 	@BeforeClass
 	public void LaunchT2Q() throws InterruptedException {
 		System.out.println("Start");
 		createReportFolder();
-
 	}
 
 	@BeforeMethod()
@@ -40,12 +35,11 @@ import scripts.ProMS.WT_ReservationPage;
 		vFileName = result.getAnnotation(Test.class).description();
 		startTest(vFileName);
 		openBrowser();
-		//driver.get(getURL("varDCRMURL"));
 		driver.get(getURL("varWT"));
 		System.out.println("***Launch Application*****");
 	}
 
-	//@Test(description = "Create Opportunity", dataProvider = "userData")
+	// @Test(description = "Create Opportunity", dataProvider = "userData")
 	/*
 	 * public void TC_CreateOpportunity(String Execute, String OppAccount, String
 	 * ProposalType, String LineItemAmount, String BusinessUnits, String RAItems,
@@ -65,57 +59,51 @@ import scripts.ProMS.WT_ReservationPage;
 
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws InterruptedException, IOException {
-		
+
 		System.out.println("Inside aftermethod");
 
 		try {
-				if (result.getStatus() == ITestResult.SUCCESS) {
-					test.pass(MarkupHelper.createLabel("Test is Passed", ExtentColor.GREEN));
-				}
-				else if (result.getStatus() == ITestResult.FAILURE) {
-					test.fail(MarkupHelper.createLabel("Test is Failed", ExtentColor.RED));
-					test.error(result.getThrowable());
-					test.addScreenCaptureFromPath(takeScreenshot(result.getTestName()));
-					
-				}
-				else if (result.getStatus() == ITestResult.SKIP) {
-					test.log(Status.SKIP, "Test Case Skipped");
-				}
-				
-				else {	
-					System.out.println("Kuch to gadbad hai Daya");
-				}
-				
-				
-				
-				
+			if (result.getStatus() == ITestResult.SUCCESS) {
+				test.pass(MarkupHelper.createLabel("Test is Passed", ExtentColor.GREEN));
+			} else if (result.getStatus() == ITestResult.FAILURE) {
+				test.fail(MarkupHelper.createLabel("Test is Failed", ExtentColor.RED));
+				test.error(result.getThrowable());
+				test.addScreenCaptureFromPath(takeScreenshot(result.getTestName()));
+			} else if (result.getStatus() == ITestResult.SKIP) {
+				test.log(Status.SKIP, "Test Case Skipped");
+			}
+
+			else {
+				System.out.println("Kuch to gadbad hai Daya");
+			}
+
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("Exception in "+ e.getMessage());
+			System.out.println("Exception in " + e.getMessage());
 		}
-		
-		
+
 		finally {
-		//were commented originally 30/5/2020
-		System.out.println("***Close Application****");
-		endTest();
-		closeDriver();
+			// were commented originally 30/5/2020
+			System.out.println("***Close Application****");
+			endTest();
+			closeDriver();
 		}
-		
+
 	}
-	
-	
+
 	@Test(description = "myCase", dataProvider = "userData")
-public void myCase(LinkedHashMap<String,String> data) {		   
+	public void myCase(LinkedHashMap<String, String> data) {
 		enterUsername(data.get("username"));
 		enterPassword(data.get("password"));
-		WT_ReservationPage res=ClickSignin();
-		res.verifyReservationPageVisible();			
+		WT_ReservationPage res = ClickSignin();
+		res.verifyReservationPageVisible();
 	}
+
 	
-	
-	
-	
-	
-	
+	@Test(description = "myCase", dataProvider = "userData")
+	public void myCase2(LinkedHashMap<String, String> data) {
+
+		System.out.println(data.get("team")+ " "+data.get("role")+" "+data.get("salary"));
+	}
+
 }

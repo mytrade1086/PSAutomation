@@ -137,8 +137,7 @@ public class ExtentReportHtml extends CommonMethod {
 
 	public void endTest() {
 		extent.flush();
-
-	}
+    }
 
 	public void sendMail() throws EmailException {
 
@@ -167,12 +166,12 @@ public class ExtentReportHtml extends CommonMethod {
 
 	@AfterSuite
 	public void launchReport() throws IOException, EmailException {
-		sendMail();
-		String strLaunchReport = getConfigVal("LaunchReport");
-		if (strLaunchReport.equals("Yes")) {
-			File file = new File(vFolder + "/TestSummary.html");
-			Desktop.getDesktop().open(file);
-		}
+//		sendMail();
+//		String strLaunchReport = getConfigVal("LaunchReport");
+//		if (strLaunchReport.equals("Yes")) {
+//			File file = new File(vFolder + "/TestSummary.html");
+//			Desktop.getDesktop().open(file);
+//		}
 
 	}
 

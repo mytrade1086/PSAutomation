@@ -58,8 +58,7 @@ public class CommonMethod extends ExcelReader {
 
 	protected void openBrowser() {
 		WebDriverManager.chromedriver().setup();
-		
-		
+
 		ChromeOptions options = new ChromeOptions();
 		Map<String, Object> prefs = null;
 		prefs = new HashMap<String, Object>();
@@ -77,10 +76,12 @@ public class CommonMethod extends ExcelReader {
 		options.addArguments("--disable-popup-blocking");
 		options.addArguments("--disable-default-apps");
 		// options.addArguments("--incognito");
-		
-		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\sunshine\\Downloads\\chromedriver_win32 _83\\chromedriver_83.exe");
+
+		// System.setProperty("webdriver.chrome.driver",
+		// "C:\\Users\\sunshine\\Downloads\\chromedriver_win32
+		// _83\\chromedriver_83.exe");
 		driver = new ChromeDriver(options);
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);// new
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);// new
 
 	}
 
@@ -126,6 +127,7 @@ public class CommonMethod extends ExcelReader {
 			try {
 				element = driver.findElement(locator);
 				return element;
+
 			} catch (NoSuchElementException e) {
 
 				System.out.println("Element not found");
@@ -133,6 +135,10 @@ public class CommonMethod extends ExcelReader {
 			} catch (StaleElementReferenceException e) {
 				System.out.println("Stale element, finding again" + element.toString());
 			}
+			if (element == null) {
+				attempts++;
+			}
+
 		}
 		return element;
 	}
@@ -332,6 +338,29 @@ public class CommonMethod extends ExcelReader {
 		if (selectBy.equals("Value")) {
 			select.selectByValue(val);
 		}
+	}
+
+	public void selectOption(WebElement ele, String selectBy,String val) {
+		Select select = new Select(ele);
+		if (selectBy.equals("Value")) {
+			select.selectByValue(val);
+		}
+	}
+
+	public void selectOptionByIndex(WebElement ele, String selectBy, int index) {
+		Select select = new Select(ele);
+		if (selectBy.equals("Index")) {
+			select.selectByIndex(index);
+		}
+		
+	}
+
+	public void selectOptionByVisibleText(WebElement ele, String selectBy, String txt) {
+		Select select = new Select(ele);
+		if (selectBy.equals("VisibleText")) {
+			select.selectByVisibleText(txt);
+		}
+
 	}
 
 	public String WebElementGetAttribute(WebElement el, String atrName) {
