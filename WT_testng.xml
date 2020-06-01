@@ -8,6 +8,7 @@
     <classes>
     <!--  <class name="WT_Testcases.WT_RegressionTest_Second"></class> -->
       <class name="WT_Testcases.WT_RegressionTest"/>
+      <class name="WT_Testcases.WT_RegressionTest2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
