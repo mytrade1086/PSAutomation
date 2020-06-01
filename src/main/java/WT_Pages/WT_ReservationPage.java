@@ -4,11 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import Base.Base;
 import utilities.ExtentReportHtml;
 
-public class WT_ReservationPage extends ExtentReportHtml{
-
-	
+public class WT_ReservationPage extends Base{
 	
 	// Locators here
 	By rdoRoundTrip = By.xpath("//input[@value='roundtrip']");
@@ -33,34 +32,32 @@ public class WT_ReservationPage extends ExtentReportHtml{
 	// Action here
 	
 	public void clickRoundtrip() {
-		find(rdoRoundTrip).click();
+		//find(rdoRoundTrip).click();
 	}
 
 	public void clickOnewayTrip() {
-		find(rdoOneWay).click();
+		//find(rdoOneWay).click();
 	}
 	
 	public void selectPassengerNum(String Passengers) {
-		selectOptionByValue(find(selPassengers),"VisibleText",Passengers);		
+		//selectOptionByValue(find(selPassengers),"VisibleText",Passengers);		
 	}
 	
 	public void selectDepartingFrom(String departingFrom) {
-		selectOptionByValue(find(selPassengers),"VisibleText",departingFrom);		
+		//selectOptionByValue(find(selPassengers),"VisibleText",departingFrom);		
 	}
 	
 	public void clickserviceClassRadio(String preference) {
 		String xpath="//input[@value=//'"+preference+"//']";
 		By rdoService=By.xpath(xpath);
-		find(rdoService).click();
-		
-		
-		
-		
+	//	find(rdoService).click();
+			
 	}
 	
 	
 public  boolean verifyReservationPageVisible() {
-	return isPresentAndDisplayed(find(rdoRoundTrip));
+	return false;
+	//return isPresentAndDisplayed(find(rdoRoundTrip));
 	
 	}
 }

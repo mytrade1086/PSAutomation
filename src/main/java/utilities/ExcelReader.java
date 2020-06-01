@@ -35,11 +35,11 @@ import com.google.common.io.Files;
 
 public class ExcelReader {
 	// CommonMethod cm = new CommonMethod();
-	Sheet testDataSheet, credentialSheet, configurationSheet;
-	Workbook wb = null;
-	Map<String, String> hm, configMap, credentialMap;
+	public Sheet testDataSheet, credentialSheet, configurationSheet;
+	public Workbook wb = null;
+	public Map<String, String> hm, configMap, credentialMap;
 
-	LinkedHashMap<String, String> excelDataHashmap; // Added for storing data in hashmap
+	public LinkedHashMap<String, String> excelDataHashmap; // Added for storing data in hashmap
 
 	public ExcelReader() {
 		// File file = new File("./src/testData/Driver.xlsx");
@@ -66,8 +66,15 @@ public class ExcelReader {
 			}
 
 		} catch (IOException e) {
-			System.out.println(e.getMessage());
+			System.out.println("Error while Accesing TestData Sheet "+e.getMessage());
 		}
+	}
+	
+	
+	
+	public void InsideExcel() {
+		
+		System.out.println("Inside ExcelReasder");
 	}
 
 	public int getRowCount(Sheet sheetRef) {
@@ -243,12 +250,18 @@ public class ExcelReader {
 				vFlag = 0;
 		}
 
+		System.out.println("crenedital map is "+credentialMap);
 		if (vFlag == 0)
 			System.out.println("Searched Environment not Found");
+		
+		
+		
 	}
 
-	public String getURL(String vURL) {
+	public  String getURL(String vURL) {
 		getCredentialData(getConfigVal("ApplicationEnvironment"));
+		
+		
 		return credentialMap.get(vURL);
 	}
 

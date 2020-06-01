@@ -32,7 +32,6 @@ import scripts.ProMS.WT_ReservationPage;
 	public void LaunchT2Q() throws InterruptedException {
 		System.out.println("Start");
 		createReportFolder();
-
 	}
 
 	@BeforeMethod()
