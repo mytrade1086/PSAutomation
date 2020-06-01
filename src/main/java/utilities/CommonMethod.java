@@ -325,22 +325,9 @@ public class CommonMethod extends ExcelReader {
 
 	}
 
-	public void selectOption(WebElement ele, String selectBy, String txt, int index, String val) {
-		Select select = new Select(ele);
-		if (selectBy.equals("VisibleText")) {
-			select.selectByVisibleText(txt);
-		}
 
-		if (selectBy.equals("Index")) {
-			select.selectByIndex(index);
-		}
 
-		if (selectBy.equals("Value")) {
-			select.selectByValue(val);
-		}
-	}
-
-	public void selectOption(WebElement ele, String selectBy,String val) {
+	public void selectOptionByValue(WebElement ele, String selectBy,String val) {
 		Select select = new Select(ele);
 		if (selectBy.equals("Value")) {
 			select.selectByValue(val);

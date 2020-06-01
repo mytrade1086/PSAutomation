@@ -22,7 +22,8 @@ public class WT_LoginPage extends ExtentReportHtml {
 	public void enterUsername(String uname) {
 		find(inpUserName).sendKeys(uname);
 	}
-
+	
+	
 	public void enterPassword(String pword) {
 		find(inpPassWord).sendKeys(pword);
 	}

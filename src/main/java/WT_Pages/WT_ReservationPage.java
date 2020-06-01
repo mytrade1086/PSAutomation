@@ -41,11 +41,11 @@ public class WT_ReservationPage extends ExtentReportHtml{
 	}
 	
 	public void selectPassengerNum(String Passengers) {
-		selectOption(find(selPassengers),"VisibleText",Passengers);		
+		selectOptionByValue(find(selPassengers),"VisibleText",Passengers);		
 	}
 	
 	public void selectDepartingFrom(String departingFrom) {
-		selectOption(find(selPassengers),"VisibleText",departingFrom);		
+		selectOptionByValue(find(selPassengers),"VisibleText",departingFrom);		
 	}
 	
 	public void clickserviceClassRadio(String preference) {

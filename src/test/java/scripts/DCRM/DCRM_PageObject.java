@@ -94,11 +94,11 @@ public class DCRM_PageObject extends ExtentReportHtml {
 		Thread.sleep(800);
 		find(account).sendKeys(accountName);
 		find(selectAccdropDown).click();
-		selectOption(find(eleChannelToMarket), "VisibleText", channelToMarket, 0, "");
-		selectOption(find(eleDemandSource), "VisibleText", demandSource, 0, "");
+		//selectOptionByVisibleText(find(eleChannelToMarket), "VisibleText", channelToMarket, 0, "");
+		//selectOptionByVisibleText(find(eleDemandSource), "VisibleText", demandSource, 0, "");
 		find(inputEstCloseDate).sendKeys(estCloseDate);
-		selectOption(find(specificPosition), "VisibleText", specPosition, 0, "");
-		selectOption(find(eleFundingResult), "VisibleText", fundingResult, 0, "");
+		//selectOptionByVisibleText(find(specificPosition), "VisibleText", specPosition, 0, "");
+		//selectOptionByVisibleText(find(eleFundingResult), "VisibleText", fundingResult, 0, "");
 //		find(eleOppIndustry).click();
 //		find(eleOppIndustry).sendKeys(oppIndustry);
 //		find(selectAccdropDown).click();
@@ -159,12 +159,12 @@ public class DCRM_PageObject extends ExtentReportHtml {
 		addPassLog("wow ", "takeScreenshot");
 		Thread.sleep(4500);
 		find(proposalRequestDetails).click();
-		selectOption(find(dropdownIPPInvolvement), "VisibleText", "Involved", 0, "");
-		selectOption(find(eleProposalType), "VisibleText", proposalType, 0, "");
+		//selectOption(find(dropdownIPPInvolvement), "VisibleText", "Involved", 0, "");
+		//(find(eleProposalType), "VisibleText", proposalType, 0, "");
 		find(initailProposalDueDate).sendKeys(getCurrentDate(initialProposalDate));
 		find(inputBudgetAmount).sendKeys(budgetAmount);
 		find(inputBudgetAmount).sendKeys(Keys.PAGE_DOWN);
-		selectOption(find(inputTermsAndConditions), "VisibleText", termsAndConditions, 0, "");
+		//selectOption(find(inputTermsAndConditions), "VisibleText", termsAndConditions, 0, "");
 		find(save).click();
 		Thread.sleep(5000);
 	}
@@ -186,11 +186,11 @@ public class DCRM_PageObject extends ExtentReportHtml {
 		Thread.sleep(1000);
 		find(account).sendKeys(AccountName);
 		find(selectAccdropDown).click();
-		selectOption(find(eleChannelToMarket), "VisibleText", "Distributor", 0, "");
-		selectOption(find(eleDemandSource), "VisibleText", "Sales Generated", 0, "");
+	//	selectOption(find(eleChannelToMarket), "VisibleText", "Distributor", 0, "");
+	//	selectOption(find(eleDemandSource), "VisibleText", "Sales Generated", 0, "");
 		find(inputEstCloseDate).sendKeys(getCurrentDate("MM/dd/yyyy"));
-		selectOption(find(specificPosition), "VisibleText", "RA Preferred or No Equal", 0, "");
-		selectOption(find(eleFundingResult), "VisibleText", "Funded (F)", 0, "");
+		//selectOption(find(specificPosition), "VisibleText", "RA Preferred or No Equal", 0, "");
+		//selectOption(find(eleFundingResult), "VisibleText", "Funded (F)", 0, "");
 		find(saveAndClose).click();
 		if (find(viewRecord).isDisplayed()) {
 			find(viewRecord).click();
@@ -255,12 +255,12 @@ public class DCRM_PageObject extends ExtentReportHtml {
 		jsClick(find(save));
 		waitForElementPresent(proposalRequestDetails);
 		find(proposalRequestDetails).click();
-		selectOption(find(dropdownIPPInvolvement), "VisibleText", "Involved", 0, "");
-		selectOption(find(eleProposalType), "VisibleText", quoteType, 0, "");
+//		selectOption(find(dropdownIPPInvolvement), "VisibleText", "Involved", 0, "");
+//		selectOption(find(eleProposalType), "VisibleText", quoteType, 0, "");
 		find(initailProposalDueDate).sendKeys(getCurrentDate("MM/dd/yyyy"));
 		find(inputBudgetAmount).sendKeys("50000");
 		find(inputBudgetAmount).sendKeys(Keys.PAGE_DOWN);
-		selectOption(find(inputTermsAndConditions), "VisibleText", "Standard", 0, "");
+	//	selectOption(find(inputTermsAndConditions), "VisibleText", "Standard", 0, "");
 		find(save).click();
 		Thread.sleep(5000);
 	}

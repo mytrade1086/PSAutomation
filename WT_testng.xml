@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+    <!--  <class name="WT_Testcases.WT_RegressionTest_Second"></class> -->
       <class name="WT_Testcases.WT_RegressionTest"/>
     </classes>
   </test> <!-- Test -->

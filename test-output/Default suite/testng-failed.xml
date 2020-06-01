@@ -5,12 +5,11 @@
     <classes>
       <class name="WT_Testcases.WT_RegressionTest">
         <methods>
-          <include name="myCase2" invocation-numbers="0 1 2"/>
           <include name="afterMethod"/>
           <include name="launchReport"/>
           <include name="BeforeMethod"/>
           <include name="LaunchT2Q"/>
-          <include name="myCase" invocation-numbers="0 1"/>
+          <include name="myCase" invocation-numbers="1"/>
         </methods>
       </class> <!-- WT_Testcases.WT_RegressionTest -->
     </classes>
