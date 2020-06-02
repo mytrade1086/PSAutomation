@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import Base.Base;
-import utilities.ElementUtil;
-import utilities.ExtentReportHtml;
+import Utilities.ElementUtil;
+import Utilities.ExtentReportHtml;
 
 public class WT_ReservationPage extends Base{
 	

@@ -3,7 +3,7 @@ package scripts.ProMS;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-import utilities.ExtentReportHtml;
+import Utilities.ExtentReportHtml;
 
 public class WT_ReservationPage extends ExtentReportHtml{
 	By rdoOneWay = By.xpath("//input[@value='oneway']");

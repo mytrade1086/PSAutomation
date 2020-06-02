@@ -4,8 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 
-
-import utilities.ExtentReportHtml;
+import Utilities.ExtentReportHtml;
 public class WT_LoginPage extends ExtentReportHtml {
 	
 	By inpUserName = By.name("userName");

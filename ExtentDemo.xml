@@ -6,9 +6,9 @@
  </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="WT_Testcases.WT_RegressionTest"/>
-      <class name="WT_Testcases.WT_RegressionTest2"/>
-          
+      <class name="WT_Testcases.ExtentDemo"/>
+      <class name="WT_Testcases.ExtentDemo2"/> 
+      <class name="WT_Testcases.WT_RegressionTest"/>      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

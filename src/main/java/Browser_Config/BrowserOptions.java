@@ -1,4 +1,4 @@
-package BrowserConfig;
+package Browser_Config;
 
 import java.util.HashMap;
 import java.util.Map;

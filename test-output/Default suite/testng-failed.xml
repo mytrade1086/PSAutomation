@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="WT_Testcases.WT_RegressionTest">
+      <class name="WT_Testcases.ExtentDemo">
         <methods>
           <include name="setExtent"/>
+          <include name="myCase" invocation-numbers="0"/>
           <include name="afterMethod"/>
           <include name="BeforeMethod"/>
-          <include name="myCase" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- WT_Testcases.WT_RegressionTest -->
+      </class> <!-- WT_Testcases.ExtentDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

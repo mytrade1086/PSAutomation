@@ -143,9 +143,9 @@ import scripts.ProMS.ProMS_PageObject;
 //		}
 //	
 //	
-//	@Test(description = "WT_Register", dataProvider = "userData")
-//public void WT_Register(LinkedHashMap<String,String> data) {		
-//		System.out.println(data);
+	//@Test(description = "WT_Register", dataProvider = "userData")
+public void WT_Register(LinkedHashMap<String,String> data) {		
+		System.out.println(data);
 //		enterUsername(data.get("username"));
 //		enterPassword(data.get("password"));
 //		WT_ReservationPage res=ClickSignin();		
@@ -153,5 +153,5 @@ import scripts.ProMS.ProMS_PageObject;
 //		res.clickOnewayTrip();
 //		res.selectPassengerNum(data.get("selectPassengerNum"));
 //		res.selectDepartingFrom(data.get("departing_from"));
-//	}	
+	}	
 }

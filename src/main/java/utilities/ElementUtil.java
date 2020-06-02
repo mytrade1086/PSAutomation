@@ -1,4 +1,4 @@
-package utilities;
+package Utilities;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,12 +25,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterSuite;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.google.common.io.Files;
 
@@ -45,7 +49,7 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 
 	public ElementUtil(WebDriver driver) {
 		wait = new WebDriverWait(driver, 20);
-		act = new Actions(Base.driver);
+		act = new Actions(driver);
 	}
 
 	public boolean waitForElementVisibility(WebElement element) throws InterruptedException {
@@ -326,10 +330,10 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 
 	public String takeScreenshot(String desc) throws IOException {
 		String destPath = null;
-		File sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File sourcePath = ((TakesScreenshot) Base.driver).getScreenshotAs(OutputType.FILE);
 		// destPath = vFolder + "\\" + desc + ".png";
 
-		destPath = System.getProperty("user.dir") + "\\" + "reports\\ExtentScreenshots\\" + desc +".png";
+		destPath = System.getProperty("user.dir") + "\\" + "reports\\ExtentScreenshots\\" + desc + ".png";
 		File destinationPath = new File(destPath);
 		Files.copy(sourcePath, destinationPath);
 		System.out.println("Screenshot Path ISSSSSSS: " + destPath);
@@ -373,92 +377,77 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 	public void addFailLog(String desc) {
 
 		try {
-			// Assert.fail();
-	//	MediaEntityModelProvider screenshot = createScreenCaptureFromPath(takeScreenshot(desc)).build();
-		
-		
-		//createScreenCaptureFromPath
-			
-			//test.addScreenCaptureFromPath(takeScreenshot(desc));
-		//	test.log(Status.FAIL, desc, screenshot);
-			test.log(Status.FAIL, desc);
-			test.addScreenCaptureFromPath(takeScreenshot(desc));
-			
-			//test.log(status, details, MediaEntityModelProvider.)
-
+			test.log(Status.FAIL, desc, MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(desc)).build());
+			Assert.fail("Failed with addFailLog method " + desc);
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Error while adding extentfail log:e.printStackTrace()");
 		}
 	}
 
 	public void addPassLog(String desc, String takeScreenshot) {
 		if (takeScreenshot.equals("takeScreenshot")) {
-
 			try {
-				test.log(Status.PASS, desc);
-				test.addScreenCaptureFromPath(takeScreenshot(desc));
+
+				test.log(Status.PASS, desc,
+						MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(desc)).build());
+
 			} catch (IOException e) {
 				System.out.println("Could not add Pass Log");
 			}
+
 		} else {
 			test.log(Status.PASS, desc);
 		}
+		Assert.assertTrue(true, "Passed with addPassLog method with description " + desc);
 
 	}
 
-	public  void addPassFailonCondition(boolean pass_fail, String desc, String takeScreenshot) {
-
-		// Passcode
-		if (pass_fail = true) {
+	public void addPassFailonCondition(boolean pass_fail, String desc, String takeScreenshot) {
+		if (pass_fail == true) {
 			addPassLog(desc, takeScreenshot);
-		}
-
-		else {
+		} else if (pass_fail == false) {
 			addFailLog(desc);
 		}
-
-	}
-
-	public MediaEntityBuilder createScreenCaptureFromPath(String takeScreenshot) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	public void endTest() {
 		extent.flush();
 	}
+	
+	
+	public static void afterMethod(ITestResult result) throws InterruptedException, IOException {
+		System.out.println("Inside aftermethod");
+		try {
+			if (result.getStatus() == ITestResult.SUCCESS) {
+				test.pass(MarkupHelper.createLabel("Test is Passed", ExtentColor.GREEN));
+			} else if (result.getStatus() == ITestResult.FAILURE) {
+				test.fail(MarkupHelper.createLabel("Test is Failed", ExtentColor.RED));
+				test.error(result.getThrowable());
+			} else if (result.getStatus() == ITestResult.SKIP) {
+				test.log(Status.SKIP, "Test Case Skipped");
+			}
 
-	public void sendMail() {
+			else {
+				System.out.println("something wrong");
+			}
 
-//		System.out.println("Inside Email");
-//		EmailAttachment attachment = new EmailAttachment();
-//		//attachment.setPath(vFolder + "/TestSummary.html");
-//		attachment.setDisposition(EmailAttachment.ATTACHMENT);
-//		attachment.setDescription("Automation Report");
-//		attachment.setName("TestSummary.html");
-//		System.out.println("Email");
-//		// Create the email message
-//		MultiPartEmail email = new MultiPartEmail();
-//		email.setHostName("mailrelay.ra.rockwell.com");
-//		email.setSmtpPort(25);
-//		email.addTo("SShetty9@ra.rockwell.com", "Sanat Shetty");
-//		email.setFrom("SShetty9@ra.rockwell.com", "Sanat Shetty");
-//		email.setSubject("Automation Report");
-//		email.setMsg("PFA of the ProMS Automation execution. \n\n\n Thanks and Regards, \n Sanat ");
-//		// add the attachment
-//		email.attach(attachment);
-//		// send the email
-//		email.send();
-//		System.out.println("Email Sent");
-
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Exception in " + e.getMessage());
+		}
+//
+		finally {
+			afterMethod();
+			driver.quit();
+			System.out.println("Teardown Performed");
+		}
 	}
 
-	public void launchReport() {
-//		sendMail();
-//		String strLaunchReport = getConfigVal("LaunchReport");
-//		if (strLaunchReport.equals("Yes")) {
-//			File file = new File(vFolder + "/TestSummary.html");
-//			Desktop.getDesktop().open(file);
-	}
+	
+	
+	
+	
+	
+	
 
 }

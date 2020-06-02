@@ -1,4 +1,4 @@
-package Config;
+package Browser_Config;
 
 public class Constants {
 	

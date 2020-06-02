@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>H:\ProMSAutomation\WT_testng.xml</span>
+                    <span>H:\ProMSAutomation\ExtentDemo.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 6 failed,   </span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,35 +104,34 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WT_Testcases.WT_RegressionTest" hash-for-method="myCase({username=rautsumit2, password=rautsumit})">myCase({username=rautsumit2, password=rautsumit})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WT_Testcases.WT_RegressionTest2" hash-for-method="myCase({username=rautsumit, password=rautsumit})">myCase({username=rautsumit, password=rautsumit})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WT_Testcases.WT_RegressionTest" hash-for-method="myCase({username=rautsumit, password=rautsumit})">myCase({username=rautsumit, password=rautsumit})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WT_Testcases.WT_RegressionTest2" hash-for-method="myCase({username=rautsumit, password=rautsumit})">myCase({username=rautsumit, password=rautsumit})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WT_Testcases.WT_RegressionTest" hash-for-method="myCase({username=rautsumit, password=rautsumit})">myCase({username=rautsumit, password=rautsumit})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WT_Testcases.WT_RegressionTest2" hash-for-method="myCase({username=rautsumit2, password=rautsumit})">myCase({username=rautsumit2, password=rautsumit})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WT_Testcases.ExtentDemo2" hash-for-method="myCase({username=rautsumit, password=rautsumit})">myCase({username=rautsumit, password=rautsumit})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WT_Testcases.WT_RegressionTest" hash-for-method="WT_Register({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_mon...)">WT_Register({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_mon...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WT_Testcases.ExtentDemo" hash-for-method="myCase({username=rautsumit, password=rautsumit})">myCase({username=rautsumit, password=rautsumit})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WT_Testcases.WT_RegressionTest" hash-for-method="myCase({username=rautsumit, password=rautsumit})">myCase({username=rautsumit, password=rautsumit})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -147,44 +146,54 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">WT_Testcases.ExtentDemo2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="myCase({username=rautsumit, password=rautsumit})">
+                  </a> <!-- myCase({username=rautsumit, password=rautsumit}) -->
+                  <span class="method-name">myCase</span>
+                  <span class="parameters">({username=rautsumit, password=rautsumit})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed with addFailLog method Reservation page checkpoint
+	at Utilities.ElementUtil.addFailLog(ElementUtil.java:381)
+	at Utilities.ElementUtil.addPassFailonCondition(ElementUtil.java:409)
+	at WT_Testcases.ExtentDemo2.myCase(ExtentDemo2.java:47)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WT_Testcases.ExtentDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="myCase({username=rautsumit, password=rautsumit})">
+                  </a> <!-- myCase({username=rautsumit, password=rautsumit}) -->
+                  <span class="method-name">myCase</span>
+                  <span class="parameters">({username=rautsumit, password=rautsumit})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">WT_Testcases.WT_RegressionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="myCase({username=rautsumit2, password=rautsumit})">
-                  </a> <!-- myCase({username=rautsumit2, password=rautsumit}) -->
-                  <span class="method-name">myCase</span>
-                  <span class="parameters">({username=rautsumit2, password=rautsumit})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=83.0.4103.61)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54532}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: fa01cb91c985f87d6dc891e3a131edb0
-*** Element info: {Using=name, value=userName}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at utilities.ElementUtil.waitForElementPresent(ElementUtil.java:276)
-	at utilities.ElementUtil.getElement(ElementUtil.java:260)
-	at utilities.ElementUtil.doSendKeys(ElementUtil.java:281)
-	at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
-	at WT_Testcases.WT_RegressionTest.myCase(WT_RegressionTest.java:101)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="WT_Register({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_mon...)">
+                  </a> <!-- WT_Register({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_mon...) -->
+                  <span class="method-name">WT_Register</span>
+                  <span class="parameters">({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_month=June, departing_day=1, arriving_in=New yok , returning_month=6, returning_day=3, preferences=Business class, airline=Unified Airlines})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -193,214 +202,14 @@ Session ID: fa01cb91c985f87d6dc891e3a131edb0
                   </a> <!-- myCase({username=rautsumit, password=rautsumit}) -->
                   <span class="method-name">myCase</span>
                   <span class="parameters">({username=rautsumit, password=rautsumit})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: userName (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at utilities.ElementUtil.waitForElementPresent(ElementUtil.java:276)
-	at utilities.ElementUtil.getElement(ElementUtil.java:260)
-	at utilities.ElementUtil.doSendKeys(ElementUtil.java:281)
-	at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
-	at WT_Testcases.WT_RegressionTest.myCase(WT_RegressionTest.java:101)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;userName&apos;]&quot;}
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 142bbf288ccfbd20960f47de8c3fdebb
-*** Element info: {Using=name, value=userName}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 33 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="myCase({username=rautsumit, password=rautsumit})">
-                  </a> <!-- myCase({username=rautsumit, password=rautsumit}) -->
-                  <span class="method-name">myCase</span>
-                  <span class="parameters">({username=rautsumit, password=rautsumit})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=83.0.4103.61)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: cd91f1f9341ed547e9142483cedca55d
-*** Element info: {Using=name, value=userName}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at utilities.ElementUtil.waitForElementPresent(ElementUtil.java:276)
-	at utilities.ElementUtil.getElement(ElementUtil.java:260)
-	at utilities.ElementUtil.doSendKeys(ElementUtil.java:281)
-	at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
-	at WT_Testcases.WT_RegressionTest.myCase(WT_RegressionTest.java:101)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">WT_Testcases.WT_RegressionTest2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="myCase({username=rautsumit, password=rautsumit})">
-                  </a> <!-- myCase({username=rautsumit, password=rautsumit}) -->
-                  <span class="method-name">myCase</span>
-                  <span class="parameters">({username=rautsumit, password=rautsumit})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=83.0.4103.61)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54589}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a731280c7f5f70e0844f7638527ff05f
-*** Element info: {Using=name, value=userName}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at utilities.ElementUtil.waitForElementPresent(ElementUtil.java:276)
-	at utilities.ElementUtil.getElement(ElementUtil.java:260)
-	at utilities.ElementUtil.doSendKeys(ElementUtil.java:281)
-	at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
-	at WT_Testcases.WT_RegressionTest2.myCase(WT_RegressionTest2.java:115)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="myCase({username=rautsumit, password=rautsumit})">
-                  </a> <!-- myCase({username=rautsumit, password=rautsumit}) -->
-                  <span class="method-name">myCase</span>
-                  <span class="parameters">({username=rautsumit, password=rautsumit})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: userName (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at utilities.ElementUtil.waitForElementPresent(ElementUtil.java:276)
-	at utilities.ElementUtil.getElement(ElementUtil.java:260)
-	at utilities.ElementUtil.doSendKeys(ElementUtil.java:281)
-	at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
-	at WT_Testcases.WT_RegressionTest2.myCase(WT_RegressionTest2.java:115)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;userName&apos;]&quot;}
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8b545c5fd150cb2847bf36fa93c0095f
-*** Element info: {Using=name, value=userName}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 33 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="myCase({username=rautsumit2, password=rautsumit})">
-                  </a> <!-- myCase({username=rautsumit2, password=rautsumit}) -->
-                  <span class="method-name">myCase</span>
-                  <span class="parameters">({username=rautsumit2, password=rautsumit})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: userName (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at utilities.ElementUtil.waitForElementPresent(ElementUtil.java:276)
-	at utilities.ElementUtil.getElement(ElementUtil.java:260)
-	at utilities.ElementUtil.doSendKeys(ElementUtil.java:281)
-	at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
-	at WT_Testcases.WT_RegressionTest2.myCase(WT_RegressionTest2.java:115)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;userName&apos;]&quot;}
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54619}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2f20b14b9855a0934179da9cd8b9f38f
-*** Element info: {Using=name, value=userName}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 33 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">H:\ProMSAutomation\WT_testng.xml</span>
+            <span class="header-content">H:\ProMSAutomation\ExtentDemo.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -412,8 +221,9 @@ Session ID: 2f20b14b9855a0934179da9cd8b9f38f
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;WT_Testcases.ExtentDemo&quot;/&gt;
+      &lt;class name=&quot;WT_Testcases.ExtentDemo2&quot;/&gt;
       &lt;class name=&quot;WT_Testcases.WT_RegressionTest&quot;/&gt;
-      &lt;class name=&quot;WT_Testcases.WT_RegressionTest2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -427,7 +237,7 @@ Session ID: 2f20b14b9855a0934179da9cd8b9f38f
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -453,36 +263,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'myCase')
-data.setCell(0, 2, 'WT_Testcases.WT_RegressionTest')
-data.setCell(0, 3, 60091);
+data.setCell(0, 2, 'WT_Testcases.ExtentDemo')
+data.setCell(0, 3, 4973);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'myCase')
 data.setCell(1, 2, 'WT_Testcases.WT_RegressionTest')
-data.setCell(1, 3, 60042);
+data.setCell(1, 3, 4805);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'myCase')
-data.setCell(2, 2, 'WT_Testcases.WT_RegressionTest2')
-data.setCell(2, 3, 60029);
+data.setCell(2, 2, 'WT_Testcases.ExtentDemo2')
+data.setCell(2, 3, 4792);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'myCase')
-data.setCell(3, 2, 'WT_Testcases.WT_RegressionTest2')
-data.setCell(3, 3, 20111);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'myCase')
-data.setCell(4, 2, 'WT_Testcases.WT_RegressionTest')
-data.setCell(4, 3, 20038);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'myCase')
-data.setCell(5, 2, 'WT_Testcases.WT_RegressionTest2')
-data.setCell(5, 3, 20019);
+data.setCell(3, 1, 'WT_Register')
+data.setCell(3, 2, 'WT_Testcases.WT_RegressionTest')
+data.setCell(3, 3, 3);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -497,11 +299,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">WT_Testcases.WT_RegressionTest2</span>
+              <span class="ignored-class-name">WT_Testcases.ExtentDemo2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setExtent</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">WT_Testcases.WT_RegressionTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setExtent</span>
                 <br/>
@@ -515,97 +324,66 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">WT_Testcases.WT_RegressionTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">WT_Testcases.ExtentDemo</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setExtent</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">359 ms</span>
+                <span class="method-start">1135 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">myCase({username=rautsumit, password=rautsumit})</span>
-                <span class="method-start">8310 ms</span>
+                <span class="method-start">10651 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=myCase status=FAILURE method=WT_RegressionTest.myCase(java.util.LinkedHashMap)[pri:...)</span>
-                <span class="method-start">69431 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">BeforeMethod</span>
-                <span class="method-start">70276 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">myCase({username=rautsumit2, password=rautsumit})</span>
-                <span class="method-start">76496 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=myCase status=FAILURE method=WT_RegressionTest.myCase(java.util.LinkedHashMap)[pri:...)</span>
-                <span class="method-start">136935 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">BeforeMethod</span>
-                <span class="method-start">137810 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">myCase({username=rautsumit, password=rautsumit})</span>
-                <span class="method-start">149839 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=myCase status=FAILURE method=WT_RegressionTest.myCase(java.util.LinkedHashMap)[pri:...)</span>
-                <span class="method-start">170368 ms</span>
+                <span class="method-name">afterMethod([TestResult name=myCase status=SUCCESS method=ExtentDemo.myCase(java.util.LinkedHashMap)[pri:0, inst...)</span>
+                <span class="method-start">15624 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">WT_Testcases.WT_RegressionTest2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">WT_Testcases.ExtentDemo2</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">171258 ms</span>
+                <span class="method-start">17845 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">myCase({username=rautsumit, password=rautsumit})</span>
-                <span class="method-start">177416 ms</span>
+                <span class="method-start">25496 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=myCase status=FAILURE method=WT_RegressionTest2.myCase(java.util.LinkedHashMap)[pri...)</span>
-                <span class="method-start">237866 ms</span>
+                <span class="method-name">afterMethod([TestResult name=myCase status=FAILURE method=ExtentDemo2.myCase(java.util.LinkedHashMap)[pri:0, ins...)</span>
+                <span class="method-start">30770 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WT_Testcases.WT_RegressionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">31945 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WT_Register({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_mon...)</span>
+                <span class="method-start">39779 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=WT_Register status=SUCCESS method=WT_RegressionTest.WT_Register(java.util.LinkedHas...)</span>
+                <span class="method-start">39784 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">238632 ms</span>
+                <span class="method-start">40901 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">myCase({username=rautsumit2, password=rautsumit})</span>
-                <span class="method-start">249640 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=myCase status=FAILURE method=WT_RegressionTest2.myCase(java.util.LinkedHashMap)[pri...)</span>
-                <span class="method-start">270063 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">BeforeMethod</span>
-                <span class="method-start">270985 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">myCase({username=rautsumit, password=rautsumit})</span>
-                <span class="method-start">277108 ms</span>
+                <span class="method-start">48649 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=myCase status=FAILURE method=WT_RegressionTest2.myCase(java.util.LinkedHashMap)[pri...)</span>
-                <span class="method-start">297634 ms</span>
+                <span class="method-name">afterMethod([TestResult name=myCase status=SUCCESS method=WT_RegressionTest.myCase(java.util.LinkedHashMap)[pri:...)</span>
+                <span class="method-start">53455 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

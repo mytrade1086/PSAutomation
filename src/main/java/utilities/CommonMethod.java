@@ -1,4 +1,4 @@
-package utilities;
+package Utilities;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -286,6 +286,8 @@ public class CommonMethod extends ExcelReader {
 	}
 
 	public String getAllLiValueforUL(WebElement ele) throws InterruptedException {
+	
+		
 		List<WebElement> li;
 		int i = 0;
 		String val = "";

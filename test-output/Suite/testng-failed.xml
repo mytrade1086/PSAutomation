@@ -6,22 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="WT_Testcases.WT_RegressionTest">
+      <class name="WT_Testcases.ExtentDemo2">
         <methods>
           <include name="setExtent"/>
+          <include name="myCase" invocation-numbers="0"/>
           <include name="afterMethod"/>
           <include name="BeforeMethod"/>
-          <include name="myCase" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- WT_Testcases.WT_RegressionTest -->
-      <class name="WT_Testcases.WT_RegressionTest2">
-        <methods>
-          <include name="myCase" invocation-numbers="0 1 2"/>
-          <include name="setExtent"/>
-          <include name="BeforeMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- WT_Testcases.WT_RegressionTest2 -->
+      </class> <!-- WT_Testcases.ExtentDemo2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

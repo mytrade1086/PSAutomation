@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import Base.Base;
-import utilities.ElementUtil;
-import utilities.ExtentReportHtml;
+import Utilities.ElementUtil;
+import Utilities.ExtentReportHtml;
 public class WT_LoginPage extends Base {
 	
 	//Locators
