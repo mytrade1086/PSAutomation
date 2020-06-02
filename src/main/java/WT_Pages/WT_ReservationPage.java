@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import Base.Base;
+import utilities.ElementUtil;
 import utilities.ExtentReportHtml;
 
 public class WT_ReservationPage extends Base{
@@ -55,9 +56,7 @@ public class WT_ReservationPage extends Base{
 	}
 	
 	
-public  boolean verifyReservationPageVisible() {
-	return false;
-	//return isPresentAndDisplayed(find(rdoRoundTrip));
-	
+public  boolean verifyReservationPageVisible() throws InterruptedException {
+	return el.waitForElementVisibilityByLocator(rdoRoundTrip);	
 	}
 }

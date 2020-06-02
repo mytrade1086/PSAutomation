@@ -25,43 +25,32 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import BrowserConfig.BrowserOptions;
 import Config.Constants;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utilities.ElementUtil;
 
 public class Base {
 
 	public static WebDriver driver;
 	public static Properties prop;
 	FileInputStream ip;
-
-//	public static ExtentSparkReporter spark ;
-//	public static ExtentReports extent ;
-//	public static ExtentTest test;
-
 	static Date date = new Date();
 	static SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy HH-mm");
 	static String strDate = dateFormat.format(date);
 	public static ExtentReports extent;
 	public static ExtentTest test = null;
 	public ExtentHtmlReporter htmlReporter;
-	// Creating folder
-	// static String vFolder = "./reports/SummaryReport_" + strDate;
+	public static ElementUtil el;
 
 	@BeforeSuite
 	public void setExtent() {
-//		spark = new ExtentSparkReporter(System.getProperty("user.dir")+"\\target\\ExtentReports\\ExtentReport_"+strDate+".html");
-//		spark.loadXMLConfig("src\\main\\java\\Reports\\ExtentReportConfig.xml");
-//		extent = new ExtentReports();
-//		extent.attachReporter(spark);
-
 		htmlReporter = new ExtentHtmlReporter(
-			System.getProperty("user.dir") + "\\reports\\ExtentReports\\ExtentReport_" + strDate + ".html");
+				System.getProperty("user.dir") + "\\reports\\ExtentReports\\ExtentReport_" + strDate + ".html");
 		htmlReporter.loadXMLConfig("src/test/resources/extent-config.xml");
 		htmlReporter.config().setCSS(".r-img { width: 30%; }");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 //		extent.setSystemInfo("Environment", getConfigVal("ApplicationEnvironment"));
 //		extent.setSystemInfo("Application Name", getConfigVal("ApplicationName"));
-//		extent.setSystemInfo("Sprint", getConfigVal("Sprint"));	
-
+//        extent.setSystemInfo("Sprint", getConfigVal("Sprint"));	
 	}
 
 	public static void afterMethod() {
@@ -77,16 +66,10 @@ public class Base {
 
 	}
 
-
-
 	public static void initilization() {
-		// String browsername = prop.getProperty("browser");
-
-		String browsername = "chrome";
-		boolean webdriverManager = false;
-		// chromeotions
-
-		if ((browsername).equalsIgnoreCase("chrome")) {
+		String browsername = Constants.BROWSER;
+		boolean webdriverManager = Constants.WEBDRIVERMANAGER;
+		if ((browsername).trim().equalsIgnoreCase("chrome")) {
 			if (webdriverManager) {
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(BrowserOptions.setChromeOptions());
@@ -96,7 +79,6 @@ public class Base {
 				System.setProperty("webdriver.chrome.silentOutput", "true");
 				driver = new ChromeDriver(BrowserOptions.setChromeOptions());
 			}
-
 		} else if ((browsername).equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/Drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
@@ -108,42 +90,7 @@ public class Base {
 		driver.manage().timeouts().pageLoadTimeout(Constants.PAGELOAD_TIMEOUT, TimeUnit.SECONDS);
 		System.out.println("Initilization Code Executed");
 		driver.get((Constants.URL_WT));
-	}
-
-	public void openBrowser() {
-		WebDriverManager.chromedriver().setup();
-
-		ChromeOptions options = new ChromeOptions();
-		Map<String, Object> prefs = null;
-		prefs = new HashMap<String, Object>();
-		prefs.put("credentials_enable_service", false);
-		prefs.put("profile.password_manager_enabled", false);
-		prefs.put("profile.default_content_settings.geolocation", 2);
-		options.setExperimentalOption("prefs", prefs);
-		options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
-		options.addArguments("test-type");
-		options.setExperimentalOption("useAutomationExtension", false);
-		options.addArguments("start-maximized");
-		options.addArguments("--disable-extensions");
-		options.addArguments("--js-flags=--expose-gc");
-		options.addArguments("--enable-precise-memory-info");
-		options.addArguments("--disable-popup-blocking");
-		options.addArguments("--disable-default-apps");
-		// options.addArguments("--incognito");
-
-		// System.setProperty("webdriver.chrome.driver",
-		// "C:\\Users\\sunshine\\Downloads\\chromedriver_win32
-		// _83\\chromedriver_83.exe");
-		driver = new ChromeDriver(options);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);// new
-
-	}
-
-	// Closing driver
-	public void closeDriver() throws IOException {
-		driver.quit();
-		// Runtime.getRuntime().exec("taskkill /im chrome.exe /f /t");
-		// Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe");
+		el = new ElementUtil(driver);
 
 	}
 

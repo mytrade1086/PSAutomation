@@ -10,7 +10,6 @@ import utilities.ElementUtil;
 import utilities.ExtentReportHtml;
 public class WT_LoginPage extends Base {
 	
-	ElementUtil el=new ElementUtil() ;
 	//Locators
 	By inpUserName = By.name("userName");
 	By inpPassWord = By.name("password");
@@ -24,6 +23,8 @@ public class WT_LoginPage extends Base {
 
 	public void enterUsername(String uname) {
 		//find(inpUserName).sendKeys(uname);
+		
+		System.out.println("el value is "+el);
 		el.doSendKeys(inpUserName, uname);
 	}
 	

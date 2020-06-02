@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -22,68 +23,54 @@ import Base.Base;
 import WT_Pages.WT_LoginPage;
 import WT_Pages.WT_ReservationPage;
 import scripts.ProMS.ProMS_PageObject;
+import utilities.ElementUtil;
 import utilities.ExcelReader;
 
 public class WT_RegressionTest extends Base {
-	Base objBase;
-	ExcelReader objExcel=new ExcelReader();
 	WT_LoginPage objLgn;
-	String vFileName;
-	String vApplication = "WebTours";
 	WT_ReservationPage objReg;
 
-	//@BeforeClass
-//	public void LaunchT2Q() throws InterruptedException {
-//		System.out.println("Start");
-//	//	createReportFolder();
-//
-//	}
 	@BeforeMethod()
 	public void BeforeMethod() throws IOException {	
-	//openBrowser();
 		initilization();
-		
-		
-		
-	//	vFileName = result.getAnnotation(Test.class).description();
-		//startTest(vFileName); // +" iteration_"+(inCt++));
-	//	openBrowser();
-		//Base.driver.get(getURL("varDCRMURL"));
-		
-	//driver.get("http://newtours.demoaut.com/");
-		
-		//driver.get(objExcel.getURL("varWT"));	
 		objLgn=new WT_LoginPage();	
 		System.out.println("***Launch Application*****");
 	}
 
 
-
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws InterruptedException, IOException {
-
 		System.out.println("Inside aftermethod");
+//
+		try {
+			if (result.getStatus() == ITestResult.SUCCESS) {
+				test.pass(MarkupHelper.createLabel("Test is Passed", ExtentColor.GREEN));
+			} else if (result.getStatus() == ITestResult.FAILURE) {
+				test.fail(MarkupHelper.createLabel("Test is Failed", ExtentColor.RED));
+				test.error(result.getThrowable());			
+				
+				
+				
+//				MediaEntityModelProvider screenshot = createScreenCaptureFromPath(el.takeScreenshot(result.getTestName())).build();
+//				test.log(Status.FAIL, desc, screenshot);
+				
+				
+				
+				
+			   // test.addScreenCaptureFromPath(takeScreenshot(result.getTestName()));
 
-//		try {
-//			if (result.getStatus() == ITestResult.SUCCESS) {
-//				test.pass(MarkupHelper.createLabel("Test is Passed", ExtentColor.GREEN));
-//			} else if (result.getStatus() == ITestResult.FAILURE) {
-//				test.fail(MarkupHelper.createLabel("Test is Failed", ExtentColor.RED));
-//				test.error(result.getThrowable());
-//			//	test.addScreenCaptureFromPath(takeScreenshot(result.getTestName()));
-//
-//			} else if (result.getStatus() == ITestResult.SKIP) {
-//				test.log(Status.SKIP, "Test Case Skipped");
-//			}
-//
-//			else {
-//				System.out.println("something wrong");
-//			}
-//
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			System.out.println("Exception in " + e.getMessage());
-//		}
+			} else if (result.getStatus() == ITestResult.SKIP) {
+				test.log(Status.SKIP, "Test Case Skipped");
+			}
+
+			else {
+				System.out.println("something wrong");
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Exception in " + e.getMessage());
+		}
 //
 //		finally {
 //			// were commented originally. Uncommented by Sumit on 30/5/2020
@@ -93,11 +80,10 @@ public class WT_RegressionTest extends Base {
 //		}
 //		
 //		
-		Base.afterMethod();
+		afterMethod();
 		driver.quit();
 		System.out.println("Teardown Performed");
 		
-		//closeDriver();		
 		
 		
 	}
@@ -110,17 +96,23 @@ public class WT_RegressionTest extends Base {
 	
 //@Test(description = "myCase", dataProvider = "userData")
 	@Test(dataProviderClass=ExcelReader.class,dataProvider = "userData")
-	public void myCase(LinkedHashMap<String, String> data) throws InterruptedException {
+	public void myCase(LinkedHashMap<String, String> data) throws InterruptedException {	
 		
 		objLgn.enterUsername(data.get("username"));
 		objLgn.enterPassword(data.get("password"));
-	//	objReg=objLgn.ClickSignin();
-		//Assert.assertTrue(objReg.verifyReservationPageVisible());
-		Thread.sleep(2000);
-		//lgn.WT_ReservationPage res = ClickSignin();
-		//addpasslog
+		objReg=objLgn.ClickSignin();
 		
+	//	el.addPassFailonCondition(objReg.verifyReservationPageVisible(),"Reservation page ","takeScreenshot");
+		
+		if(objReg.verifyReservationPageVisible()) {		
+			el.addPassLog("Reservation_page is visible ","takeScreenshot");	
+		}
+		else {
+			el.addFailLog("Reservation_page not visible");	
+		}
 	}
+	
+	
 	
 //	
 //	

@@ -1,33 +1,33 @@
-//package WT_Testcases;
-//
-//import org.testng.annotations.Test;
-//import org.testng.annotations.BeforeClass;
-//import org.testng.AssertJUnit;
-//import org.testng.ITestContext;
-//
-//import java.io.IOException;
-//import java.lang.reflect.Method;
-//import java.util.LinkedHashMap;
-//
-//import org.testng.Assert;
-//import org.testng.ITestResult;
-//import org.testng.annotations.AfterClass;
-//import org.testng.annotations.AfterMethod;
-//import org.testng.annotations.BeforeClass;
-//import org.testng.annotations.BeforeMethod;
-//import org.testng.annotations.Test;
-//
-//import com.aventstack.extentreports.ExtentTest;
-//import com.aventstack.extentreports.Status;
-//import com.aventstack.extentreports.markuputils.ExtentColor;
-//import com.aventstack.extentreports.markuputils.MarkupHelper;
-//
-//import WT_Pages.WT_LoginPage;
-//import WT_Pages.WT_ReservationPage;
-//import scripts.ProMS.ProMS_PageObject;
-//	
-//	public class WT_RegressionTest_Second extends WT_LoginPage {
-//	//WT_LoginPage
+package WT_Testcases;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.ITestContext;
+
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.LinkedHashMap;
+
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+
+import WT_Pages.WT_LoginPage;
+import WT_Pages.WT_ReservationPage;
+import scripts.ProMS.ProMS_PageObject;
+	
+	public class WT_RegressionTest_Second extends WT_LoginPage {
+	//WT_LoginPage
 //
 //	int inCt;
 //	String vFileName;
@@ -154,4 +154,4 @@
 //		res.selectPassengerNum(data.get("selectPassengerNum"));
 //		res.selectDepartingFrom(data.get("departing_from"));
 //	}	
-//}
+}

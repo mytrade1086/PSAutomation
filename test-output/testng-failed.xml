@@ -11,9 +11,17 @@
           <include name="setExtent"/>
           <include name="afterMethod"/>
           <include name="BeforeMethod"/>
-          <include name="myCase"/>
+          <include name="myCase" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- WT_Testcases.WT_RegressionTest -->
+      <class name="WT_Testcases.WT_RegressionTest2">
+        <methods>
+          <include name="myCase" invocation-numbers="0 1 2"/>
+          <include name="setExtent"/>
+          <include name="BeforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- WT_Testcases.WT_RegressionTest2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
