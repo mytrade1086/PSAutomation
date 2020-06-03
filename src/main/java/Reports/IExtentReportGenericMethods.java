@@ -8,7 +8,7 @@ public interface IExtentReportGenericMethods {
 	
 	public  void startTest(String vFile) ;
 	public  String takeScreenshot(String desc) throws IOException ;
-	public  void addFailLog(String desc) ;
+	public  void addFailLog(String desc,String soft) ;
 	public  void addPassLog(String desc, String takeScreenshot) ;
 	public void endTest() ;
 	

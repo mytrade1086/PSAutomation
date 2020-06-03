@@ -47,11 +47,11 @@ public class AP_RegressionTest extends  Base {
 	   
 		objLgn.verifyAP_HomePageVisible();
 		objLgnReg=objLgn.clickSignin("Clicked Sign In link");
-		el.addPassFailonCondition(objLgnReg.verifyAP_Login_RegistrationVisible(), "Register Page checkpoint", "takeScreenshot");	
+		el.addPassFailonCondition(objLgnReg.verifyAP_Login_RegistrationVisible(), "Register Page checkpoint", "takeScreenshot","NA");	
 		objLgnReg.enterCreateAccountEmail(data.get("emailaddress"));
-			
+		
 		objAcctCreation=objLgnReg.clickCreateAccountbtn("Clicked create account button");
-		el.addPassFailonCondition(objAcctCreation.verifyAP_AccountCreation_Visible(), "Checkpoint for Account Creation", "takeScreenshot");	
+		el.addPassFailonCondition(objAcctCreation.verifyAP_AccountCreation_Visible(), "Checkpoint for Account Creation", "takeScreenshot","NA");	
 		objAcctCreation.clickGenderRadio(data.get("gender"));
 		objAcctCreation.enterFirstName(data.get("firstname"));
 		objAcctCreation.enterLastName(data.get("lastname"));

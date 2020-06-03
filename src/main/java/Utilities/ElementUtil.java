@@ -55,7 +55,6 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 	public boolean waitForElementVisibility(WebElement element) throws InterruptedException {
 		jsWaitForPageLoad();
 		WebElement placeholder = null;
-		// wait.until(ExpectedConditions.
 		placeholder = wait.until(ExpectedConditions.visibilityOf(element));
 		if (placeholder == null)
 			return false;
@@ -67,20 +66,18 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 	public boolean waitForElementVisibilityByLocator(By byLocator) throws InterruptedException {
 		jsWaitForPageLoad();
 		WebElement placeholder = null;
-		
+
 		placeholder = wait.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
 		if (placeholder == null) {
 			System.out.println(" Element not visible after loading");
-			addFailLog("Element not visible after timeout:"+byLocator.toString());
+			addFailLog("Element not visible after timeout:" + byLocator.toString(),"NA");
 			return false;
-			
-		
-		
-		}
-		else {	
+
+		} else {
 			return true;
+		}
 	}
-	}
+
 	public boolean waitForElementInvisibility(WebElement element) throws InterruptedException {
 		jsWaitForPageLoad();
 		boolean placeholder = false;
@@ -153,6 +150,9 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 		} catch (Exception e) {
 			wait.ignoring(StaleElementReferenceException.class);
 			Thread.sleep(2000);
+			
+			test.fail("Could not scroll to webelement");
+			//addFailLog("Element not visible after timeout:" + byLocator.toString(),"NA");
 			System.out.println("Error while scrolling to element: " + e.getMessage());
 		}
 	}
@@ -164,14 +164,15 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 	 * @param element
 	 */
 	public void clickWithActions(WebElement element) {
-		// try {
+	   
+		try {
 		act.click(element);
 		System.out.println("Clicked with Actions");
-		// } catch (Exception e) {
+		} catch (Exception e) {
 
-		// System.out.println("Error while clicking element with Actions class:
-		// "+e.getMessage());
-		// }
+		 System.out.println("Error while clicking element with Actions class:
+		"+e.getMessage());
+		 }
 	}
 
 	public void jsClick(WebElement element) {
@@ -268,50 +269,53 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 	public WebElement getElement(By locator) {
 		waitForElementPresent(locator);
 		WebElement element = null;
-		// try {
+		try {
 		element = driver.findElement(locator);
 //		if (flash.equalsIgnoreCase("yes")) {
 //			JavaScriptUtil.flash(element, driver);
 //			}
-//		} catch (Exception e) {
+        } catch (Exception e) {
 		// System.out.println("Some exception occurred while creating webelement " +
 		// locator);
-		// }
+		// }     	
+    		//test.fail("Could not scroll to webelement");
+		addFailLog("Error while locating the element: "+locator.toString(),"NA");
+        }
 		return element;
 	}
 
 	public void waitForElementPresent(By locator) {
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 25);
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 
 	public void doSendKeys(By locator, String value) {
-		// try {
-		getElement(locator).clear();
-		getElement(locator).sendKeys(value);
-		// myListener.test.info("<b>"+ value+"</b>" + " entered in inputbox ");
-		// } catch (Exception e) {
-		// System.out.println("Some exception occurred while sending to webelement " +
-		// locator);
-		// }
+		try {
+			getElement(locator).clear();
+			getElement(locator).sendKeys(value);
+			test.info("<b>" + value + "</b>" + " entered in inputbox ");
+
+		} catch (Exception e) {
+			// System.out.println("Some exception occurred while sending to webelement " +
+
+			addFailLog(value + "could not be entered in inutbox","na");
+			// locator);
+		}
 	}
 
 	public void doClick(By locator, String stepDescription) {
-		 try {
-		getElement(locator).click();
-		 test.info(stepDescription);
+		try {
+			getElement(locator).click();
+			test.info(stepDescription);
 
 		} catch (Exception e) {
-		// System.out.println("Some exception occurred while clicking on webelement " +
-		// locator);
-		test.log(Status.FAIL, "Some exception occurred while clicking")	;
-		
-		
-		
-			
-	    }
+			// System.out.println("Some exception occurred while clicking on webelement " +
+			// locator);
+			//test.log(Status.FAIL, "Some exception occurred while clicking");
+			addFailLog("stepDescription failed","na");
 
-			
+		}
+
 	}
 
 	// Extent Report Method From Anika's Framework
@@ -386,11 +390,19 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 //
 //	}
 
-	public void addFailLog(String desc) {
+	public void addFailLog(String desc, String Soft) {
 
 		try {
 			test.log(Status.FAIL, desc, MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(desc)).build());
-		Assert.fail("Failed with addFailLog method " + desc);
+
+			if (Soft.trim().toUpperCase().equals("SOFT")) {
+				// Assert.fail("Failed with addFailLog method " + desc);
+				test.info("Soft Assertion Applied. Execution will continue ");
+			}
+			else {
+				Assert.fail("Failed with addFailLog method " + desc);
+			}
+
 		} catch (IOException e) {
 			System.out.println("Error while adding extentfail log:e.printStackTrace()");
 		}
@@ -400,7 +412,7 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 		if (takeScreenshot.equals("takeScreenshot")) {
 			try {
 
-				test.log(Status.PASS, desc +" checkpoint passed",
+				test.log(Status.PASS, desc + " checkpoint passed",
 						MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(desc)).build());
 
 			} catch (IOException e) {
@@ -408,17 +420,24 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 			}
 
 		} else {
-			test.log(Status.PASS, desc+" checkpoint failed");
+			test.log(Status.PASS, desc + " checkpoint failed");
 		}
 		Assert.assertTrue(true, "Passed with addPassLog method with description " + desc);
 
 	}
 
-	public void addPassFailonCondition(boolean pass_fail, String desc, String takeScreenshot) {
+	/**
+	 * 
+	 * @param pass_fail_boolean value
+	 * @param desc
+	 * @param takeScreenshot
+	 * @param Soft for deciding soft assetrtion or not
+	 */
+	public void addPassFailonCondition(boolean pass_fail, String desc, String takeScreenshot,String Soft) {
 		if (pass_fail == true) {
 			addPassLog(desc, takeScreenshot);
 		} else if (pass_fail == false) {
-			addFailLog(desc);
+			addFailLog(desc,Soft);
 		}
 	}
 
@@ -432,15 +451,15 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 			if (result.getStatus() == ITestResult.SUCCESS) {
 				// test.pass(result.getName() +" is passed");
 				test.pass(MarkupHelper.createLabel("Final Status :Execution Successful", ExtentColor.GREEN));
-				
-				//test.log(statu, details, provider)
-				
+
+				// test.log(statu, details, provider)
+
 			} else if (result.getStatus() == ITestResult.FAILURE) {
 				// test.fail(MarkupHelper.createLabel("Test is Failed", ExtentColor.RED));
 				test.fail(MarkupHelper.createLabel("Final Status : Execution Failed", ExtentColor.RED));
 				// test.fail(result.getName() +" is Failed with Exception
 				// "+result.getThrowable());
-				// test.error(result.getThrowable());
+				test.error(result.getThrowable());
 			} else if (result.getStatus() == ITestResult.SKIP) {
 				test.log(Status.SKIP, "Test Case Skipped");
 			} else {

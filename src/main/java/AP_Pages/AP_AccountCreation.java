@@ -29,11 +29,9 @@ public class AP_AccountCreation extends Base {
 		if (maleFemale.trim().toLowerCase().equals("male")) {
 			el.doClick(rdo_Mr, "clicking " + maleFemale);
 		}
-
 		else if (maleFemale.trim().toLowerCase().equals("female")) {
 			el.doClick(rdo_Mr, "clicking " + maleFemale);
 		}
-
 	}
 
 	public void enterFirstName(String firstName) {
