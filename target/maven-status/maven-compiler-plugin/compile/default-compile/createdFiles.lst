@@ -1,4 +1,12 @@
-utilities\ExcelReader.class
-utilities\CommonMethod.class
-utilities\ExtentReportHtml.class
-utilities\PropertiesReader.class
+Utilities\CommonMethod.class
+Utilities\ExcelReader.class
+Reports\Retry.class
+Browser_Config\Constants.class
+WT_Pages\WT_LoginPage.class
+WT_Pages\WT_ReservationPage.class
+Reports\IExtentReportGenericMethods.class
+Utilities\ElementUtil.class
+Reports\myListener.class
+Browser_Config\BrowserOptions.class
+Base\Base.class
+Utilities\ExtentReportHtml.class

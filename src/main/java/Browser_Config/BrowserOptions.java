@@ -24,11 +24,16 @@ public class BrowserOptions {
 	options.addArguments("--enable-precise-memory-info");
 	options.addArguments("--disable-popup-blocking");
 	 options.addArguments("--disable-default-apps");
-	 options.addArguments("--incognito");
+	 //options.addArguments("--incognito");
      return options;
 }
 	
 	public void setFirefoxOptions() {
+	
+		
+}
+	
+	public void setAndroid() {
 	
 		
 }

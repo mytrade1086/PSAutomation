@@ -14,6 +14,14 @@
           <include name="BeforeMethod"/>
         </methods>
       </class> <!-- WT_Testcases.ExtentDemo2 -->
+      <class name="WT_Testcases.WT_RegressionTest">
+        <methods>
+          <include name="setExtent"/>
+          <include name="WT_Register" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- WT_Testcases.WT_RegressionTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

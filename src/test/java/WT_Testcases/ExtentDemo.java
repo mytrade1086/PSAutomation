@@ -23,11 +23,17 @@ public class ExtentDemo extends Base {
 	WT_ReservationPage objReg;
 	@BeforeMethod()
 	public void BeforeMethod()   {
+		try {
 			initilization();
-		objLgn = new WT_LoginPage();
-		System.out.println("***Launch Application*****");
+			objLgn = new WT_LoginPage();
+			System.out.println("***Launch Application*****");
+		} catch (Exception e) {
+		
+			System.err.println("Problem while launching browser: "+e.getMessage());
+			
+		}
 	}
-
+			
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws InterruptedException, IOException {
 		System.out.println("Inside aftermethod");
@@ -39,8 +45,9 @@ public class ExtentDemo extends Base {
 		System.out.println(data);
 		objLgn.enterUsername(data.get("username"));
 		objLgn.enterPassword(data.get("password"));
-	     WT_ReservationPage res = objLgn.ClickSignin();     
-	    el.addPassFailonCondition(res.verifyReservationPageVisible(), "Reservation page checkpoint", "takeScreenshot"); 
+	     WT_ReservationPage res = objLgn.ClickSignin();   
+	     el.addPassFailonCondition(res.verifyReservationPageVisible(), "Reservation Page", "takeScreenshot"); 
+	     
 	
 	}
 	

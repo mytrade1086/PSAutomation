@@ -30,15 +30,16 @@ public class WT_RegressionTest extends Base {
 	WT_ReservationPage objReg;
 
 	@BeforeMethod()
-	public void BeforeMethod()   {
-		
+	public void BeforeMethod() {
 		try {
 			initilization();
-		} catch (Exception e) {	
-			System.out.println("Error in initilization() in BeforeMethod");
+			objLgn = new WT_LoginPage();
+			System.out.println("***Launch Application*****");
+		} catch (Exception e) {
+
+			System.err.println("Problem while launching browser: " + e.getMessage());
 		}
-		objLgn = new WT_LoginPage();
-		System.out.println("***Launch Application*****");
+
 	}
 
 	@AfterMethod
@@ -53,40 +54,21 @@ public class WT_RegressionTest extends Base {
 		objLgn.enterPassword(data.get("password"));
 		objReg = objLgn.ClickSignin();
 
-	if (objReg.verifyReservationPageVisible()) {
+		if (objReg.verifyReservationPageVisible()) {
 			el.addPassLog("Reservation_page is visible ", "takeScreenshot");
 		} else {
 			el.addFailLog("Reservation_page not visible");
 		}
 	}
 
-//	
-//	
-//	//@Test(description = "myCase", dataProvider = "userData")
-//	public void myCaseDDDD(LinkedHashMap<String, String> data) {
-//		System.out.println(data);
-//		objLgn.enterUsername(data.get("username"));
-//		objLgn.enterPassword(data.get("password"));
-//		//WT_ReservationPage res = ClickSignin();
-//		//Assert.assertTrue(res.verifyReservationPageVisible());
-//	}
-//
-	@Test(dataProviderClass = ExcelReader.class, dataProvider = "userData")
-	public void myCase2(LinkedHashMap<String, String> data) {
-		Assert.assertEquals(true,false );
-//		el.addPassLog("desc2", "takeScreenshot");
-//		System.out.println(data);
-	}
 
 	@Test(dataProviderClass = ExcelReader.class, dataProvider = "userData")
 	public void WT_Register(LinkedHashMap<String, String> data) {
 		System.out.println(data);
-//		objLgn.enterUsername(data.get("username"));
-//		objLgn.enterPassword(data.get("password"));
-//		//WT_ReservationPage res = ClickSignin();
-////		Assert.assertTrue(res.verifyReservationPageVisible());
-////		res.clickOnewayTrip();
-////		res.selectPassengerNum(data.get("selectPassengerNum"));
-////		res.selectDepartingFrom(data.get("departing_from"));
+		objLgn.enterUsername(data.get("username"));
+		objLgn.enterPassword(data.get("password"));
+		// el.addPassLog("manually added", "takeScreenshot");
+		el.addFailLog("manually added failure");
+
 	}
 }

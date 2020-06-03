@@ -1,4 +1,15 @@
-scripts\ProMS\ProMS_PageObject.class
-scripts\DCRM\DCRM_PageObject.class
+WT_Testcases\WT_RegressionTest_Second.class
+scripts\ProMS\WT_LoginPage.class
+scripts\ProMS\WebTours_TestCases.class
 scripts\DCRM\DCRMScenarios_Test.class
+scripts\DCRM\Rough.class
+scripts\ProMS\WT_ReservationPage.class
+WT_Testcases\WT_RegressionTest2.class
+WT_Testcases\Demo.class
+WT_Testcases\ExtentDemo.class
+WT_Testcases\ExtentDemo2.class
+scripts\DCRM\DCRM_PageObject.class
 scripts\ProMS\ProMSScenarios_Test.class
+scripts\ProMS\ProMS_PageObject.class
+scripts\ProMS\WT_TestCases.class
+WT_Testcases\WT_RegressionTest.class

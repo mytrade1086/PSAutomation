@@ -25,10 +25,17 @@ public class ExtentDemo2 extends Base {
 
 	@BeforeMethod()
 	public void BeforeMethod()   {	
+		try {
 			initilization();
+			objLgn = new WT_LoginPage();
+			System.out.println("***Launch Application*****");
+		} catch (Exception e) {
+		
+			System.err.println("Problem while launching browser: "+e.getMessage());
+			e.printStackTrace();
+		}
 			
-		objLgn = new WT_LoginPage();
-		System.out.println("***Launch Application*****");
+		
 	}
 
 	@AfterMethod
@@ -44,7 +51,6 @@ public class ExtentDemo2 extends Base {
 		objLgn.enterUsername(data.get("username"));
 		objLgn.enterPassword(data.get("password"));
 	     WT_ReservationPage res = objLgn.ClickSignin();  
-	     
 	     el.addPassFailonCondition(!(res.verifyReservationPageVisible()), "Reservation page checkpoint", "takeScreenshot");  
 	}
 	

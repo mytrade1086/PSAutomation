@@ -70,12 +70,17 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 		// wait.until(ExpectedConditions.
 
 		placeholder = wait.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
-		if (placeholder == null)
+		if (placeholder == null) {
+			System.out.println(" Element not visible after loading");
 			return false;
-		else
+		
+		}
+		else {
+			
+		
 			return true;
 	}
-
+	}
 	public boolean waitForElementInvisibility(WebElement element) throws InterruptedException {
 		jsWaitForPageLoad();
 		boolean placeholder = false;
@@ -332,8 +337,8 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 		String destPath = null;
 		File sourcePath = ((TakesScreenshot) Base.driver).getScreenshotAs(OutputType.FILE);
 		// destPath = vFolder + "\\" + desc + ".png";
-
-		destPath = System.getProperty("user.dir") + "\\" + "reports\\ExtentScreenshots\\" + desc + ".png";
+		destPath = System.getProperty("user.dir") + "\\reports\\ExtentScreenshots\\" + desc + ElementUtil.getDatetime()
+				+ ".png";
 		File destinationPath = new File(destPath);
 		Files.copy(sourcePath, destinationPath);
 		System.out.println("Screenshot Path ISSSSSSS: " + destPath);
@@ -378,7 +383,7 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 
 		try {
 			test.log(Status.FAIL, desc, MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(desc)).build());
-			Assert.fail("Failed with addFailLog method " + desc);
+		Assert.fail("Failed with addFailLog method " + desc);
 		} catch (IOException e) {
 			System.out.println("Error while adding extentfail log:e.printStackTrace()");
 		}
@@ -388,7 +393,7 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 		if (takeScreenshot.equals("takeScreenshot")) {
 			try {
 
-				test.log(Status.PASS, desc,
+				test.log(Status.PASS, desc +" checkpoint passed",
 						MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(desc)).build());
 
 			} catch (IOException e) {
@@ -396,7 +401,7 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 			}
 
 		} else {
-			test.log(Status.PASS, desc);
+			test.log(Status.PASS, desc+" checkpoint failed");
 		}
 		Assert.assertTrue(true, "Passed with addPassLog method with description " + desc);
 
@@ -413,24 +418,27 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 	public void endTest() {
 		extent.flush();
 	}
-	
-	
+
 	public static void afterMethod(ITestResult result) throws InterruptedException, IOException {
 		System.out.println("Inside aftermethod");
 		try {
 			if (result.getStatus() == ITestResult.SUCCESS) {
-				test.pass(MarkupHelper.createLabel("Test is Passed", ExtentColor.GREEN));
+				// test.pass(result.getName() +" is passed");
+				test.pass(MarkupHelper.createLabel("Final Status :Execution Successful", ExtentColor.GREEN));
+				
+				//test.log(statu, details, provider)
+				
 			} else if (result.getStatus() == ITestResult.FAILURE) {
-				test.fail(MarkupHelper.createLabel("Test is Failed", ExtentColor.RED));
-				test.error(result.getThrowable());
+				// test.fail(MarkupHelper.createLabel("Test is Failed", ExtentColor.RED));
+				test.fail(MarkupHelper.createLabel("Final Status : Execution Failed", ExtentColor.RED));
+				// test.fail(result.getName() +" is Failed with Exception
+				// "+result.getThrowable());
+				// test.error(result.getThrowable());
 			} else if (result.getStatus() == ITestResult.SKIP) {
 				test.log(Status.SKIP, "Test Case Skipped");
-			}
-
-			else {
+			} else {
 				System.out.println("something wrong");
 			}
-
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("Exception in " + e.getMessage());
@@ -442,12 +450,5 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 			System.out.println("Teardown Performed");
 		}
 	}
-
-	
-	
-	
-	
-	
-	
 
 }
