@@ -57,7 +57,7 @@ public class WT_RegressionTest extends Base {
 		if (objReg.verifyReservationPageVisible()) {
 			el.addPassLog("Reservation_page is visible ", "takeScreenshot");
 		} else {
-			el.addFailLog("Reservation_page not visible");
+			el.addFailLog("Reservation_page not visible","na");
 		}
 	}
 
@@ -68,7 +68,7 @@ public class WT_RegressionTest extends Base {
 		objLgn.enterUsername(data.get("username"));
 		objLgn.enterPassword(data.get("password"));
 		// el.addPassLog("manually added", "takeScreenshot");
-		el.addFailLog("manually added failure");
+		el.addFailLog("manually added failure","na");
 
 	}
 }

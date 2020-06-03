@@ -58,15 +58,18 @@ public class myListener extends Base implements ITestListener {
 		
 	}
 
-	public void onTestSkipped(ITestResult result) {
-		test.log(Status.SKIP, result.getName() + " skipped");
+	public void onTestSkipped(ITestResult result) {	
+		if(test!=null) 	{		
+			test.log(Status.SKIP, result.getName() + " skipped");
+		}
+		
 	}
 	
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 
 	}
 	public void onTestFailedWithTimeout(ITestResult result) {
-		el.addFailLog(result.getName() +" has timeout out");
+		el.addFailLog(result.getName() +" has timeout out","NA");
 	}
 	
 	public void onStart(ITestContext context) {

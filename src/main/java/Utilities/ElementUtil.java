@@ -170,8 +170,7 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 		System.out.println("Clicked with Actions");
 		} catch (Exception e) {
 
-		 System.out.println("Error while clicking element with Actions class:
-		"+e.getMessage());
+		 System.out.println("Error while clicking element with Actions class:"+e.getMessage());
 		 }
 	}
 
@@ -456,10 +455,14 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 
 			} else if (result.getStatus() == ITestResult.FAILURE) {
 				// test.fail(MarkupHelper.createLabel("Test is Failed", ExtentColor.RED));
-				test.fail(MarkupHelper.createLabel("Final Status : Execution Failed", ExtentColor.RED));
+		
 				// test.fail(result.getName() +" is Failed with Exception
 				// "+result.getThrowable());
+				
+				el.addFailLog("caught in after test",  "na");
 				test.error(result.getThrowable());
+				test.fail(MarkupHelper.createLabel("Final Status : Execution Failed", ExtentColor.RED));
+				
 			} else if (result.getStatus() == ITestResult.SKIP) {
 				test.log(Status.SKIP, "Test Case Skipped");
 			} else {

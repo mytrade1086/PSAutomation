@@ -46,7 +46,7 @@ public class ExtentDemo extends Base {
 		objLgn.enterUsername(data.get("username"));
 		objLgn.enterPassword(data.get("password"));
 	     WT_ReservationPage res = objLgn.ClickSignin();   
-	     el.addPassFailonCondition(res.verifyReservationPageVisible(), "Reservation Page", "takeScreenshot"); 
+	     el.addPassFailonCondition(res.verifyReservationPageVisible(), "Reservation Page", "takeScreenshot","na"); 
 	     
 	
 	}
