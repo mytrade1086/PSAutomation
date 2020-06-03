@@ -459,8 +459,14 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 				// test.fail(result.getName() +" is Failed with Exception
 				// "+result.getThrowable());
 				
-				el.addFailLog("caught in after test",  "na");
+				//el.addFailLog("caught in after test",  "na");
 				test.error(result.getThrowable());
+				
+				
+				test.log(Status.FAIL,result.getName()+" failed", MediaEntityBuilder.createScreenCaptureFromPath(el.takeScreenshot("Test Failed")).build());
+				
+				
+				
 				test.fail(MarkupHelper.createLabel("Final Status : Execution Failed", ExtentColor.RED));
 				
 			} else if (result.getStatus() == ITestResult.SKIP) {
@@ -475,7 +481,6 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 //
 		finally {
 			afterMethod();
-			driver.quit();
 			System.out.println("Teardown Performed");
 		}
 	}

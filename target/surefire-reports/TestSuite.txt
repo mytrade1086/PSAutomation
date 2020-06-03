@@ -1,16 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.123 s <<< FAILURE! - in TestSuite
-scripts.ProMS.ProMSScenarios_Test.TC_VerifySAPQuoteFieldsInProMS  Time elapsed: 9.31 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-chrome not reachable
-  (Session info: chrome=80.0.3987.149)
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: 'APINMUM4TQHH92', ip: '172.28.56.61', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 266.216 s <<< FAILURE! - in TestSuite
+AT_01_NewAccount(AP_TestCases.AP_RegressionTest)  Time elapsed: 27.403 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Your personal information')] (tried for 20 second(s) with 500 milliseconds interval)
+	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Your personal information')]"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-G0D562V', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Sshetty9\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49612}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b7cf4886e741b3f5cd45c4f4b72dcf8b
-*** Element info: {Using=xpath, value=//input[@name='loginfmt']}
-	at scripts.ProMS.ProMSScenarios_Test.TC_VerifySAPQuoteFieldsInProMS(ProMSScenarios_Test.java:53)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8962fbb2021280810bf9de61bbb8801
+*** Element info: {Using=xpath, value=//*[contains(text(),'Your personal information')]}
+	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
+
+AT_01_NewAccount(AP_TestCases.AP_RegressionTest)  Time elapsed: 27.897 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Your personal information')] (tried for 20 second(s) with 500 milliseconds interval)
+	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Your personal information')]"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-G0D562V', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59420}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 756a5a7ef5c05bb47445b14c4778e76b
+*** Element info: {Using=xpath, value=//*[contains(text(),'Your personal information')]}
+	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
 

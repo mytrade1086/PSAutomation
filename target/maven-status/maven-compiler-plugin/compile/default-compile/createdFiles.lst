@@ -1,6 +1,9 @@
+AP_Pages\AP_AccountCreation.class
+AP_Pages\AP_Login_Registration.class
 Utilities\CommonMethod.class
 Utilities\ExcelReader.class
 Reports\Retry.class
+AP_Pages\AP_HomePage.class
 Browser_Config\Constants.class
 WT_Pages\WT_LoginPage.class
 WT_Pages\WT_ReservationPage.class

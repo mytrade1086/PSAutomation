@@ -52,7 +52,7 @@ public class myListener extends Base implements ITestListener {
 //		}	
 	
 		
-		afterMethod();
+		//afterMethod();
 		
 		
 		
@@ -69,7 +69,7 @@ public class myListener extends Base implements ITestListener {
 
 	}
 	public void onTestFailedWithTimeout(ITestResult result) {
-		el.addFailLog(result.getName() +" has timeout out","NA");
+		//el.addFailLog(result.getName() +" has timeout out","NA");
 	}
 	
 	public void onStart(ITestContext context) {
@@ -77,6 +77,6 @@ public class myListener extends Base implements ITestListener {
 	}
 
 	public void onFinish(ITestContext context) {
-		afterMethod();
+		//afterMethod();
 	}
 }

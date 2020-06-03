@@ -22,7 +22,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.9.10</version>
+			<version>7.1.0</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
@@ -96,7 +96,7 @@
 				<version>2.21.0</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/ExtentDemo.xml</suiteXmlFile>
+						<suiteXmlFile>AT_Regression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

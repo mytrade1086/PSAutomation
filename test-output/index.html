@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,  3 skipped,  1 passed</span>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,34 +104,20 @@
                     <div class="method-list-content failed suite-AT_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="AP_TestCases.AP_RegressionTest" hash-for-method="AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="AP_TestCases.AP_RegressionTest" hash-for-method="AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="AP_TestCases.AP_RegressionTest" hash-for-method="AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-AT_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-AT_Suite" class="hide-methods skipped suite-AT_Suite"> (hide)</a> <!-- hide-methods skipped suite-AT_Suite -->
-                      <a href="#" panel-name="suite-AT_Suite" class="show-methods skipped suite-AT_Suite"> (show)</a> <!-- show-methods skipped suite-AT_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-AT_Suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="AP_TestCases.AP_RegressionTest" hash-for-method="AT_01_NewAccount">AT_01_NewAccount</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="AP_TestCases.AP_RegressionTest" hash-for-method="AT_01_NewAccount">AT_01_NewAccount</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="AP_TestCases.AP_RegressionTest" hash-for-method="AT_01_NewAccount">AT_01_NewAccount</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-AT_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -140,6 +126,11 @@
                       <a href="#" panel-name="suite-AT_Suite" class="show-methods passed suite-AT_Suite"> (show)</a> <!-- show-methods passed suite-AT_Suite -->
                     </span>
                     <div class="method-list-content passed suite-AT_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="AP_TestCases.AP_RegressionTest" hash-for-method="AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="AP_TestCases.AP_RegressionTest" hash-for-method="AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</a> <!-- method navigator-link -->
@@ -165,26 +156,82 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">
-                  </a> <!-- AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd}) -->
+                  <a name="AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">
+                  </a> <!-- AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd}) -->
                   <span class="method-name">AT_01_NewAccount</span>
-                  <span class="parameters">({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Sign in (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+                  <span class="parameters">({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	at Utilities.ElementUtil.waitForElementVisibilityByLocator(ElementUtil.java:70)
 	at AP_Pages.AP_HomePage.verifyAP_HomePageVisible(AP_HomePage.java:18)
 	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:48)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign in&quot;}
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">
+                  </a> <!-- AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd}) -->
+                  <span class="method-name">AT_01_NewAccount</span>
+                  <span class="parameters">({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at Utilities.ElementUtil.waitForElementVisibilityByLocator(ElementUtil.java:70)
+	at AP_Pages.AP_HomePage.verifyAP_HomePageVisible(AP_HomePage.java:18)
+	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:48)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">
+                  </a> <!-- AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd}) -->
+                  <span class="method-name">AT_01_NewAccount</span>
+                  <span class="parameters">({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Your personal information&apos;)] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Utilities.ElementUtil.waitForElementVisibilityByLocator(ElementUtil.java:70)
+	at AP_Pages.AP_AccountCreation.verifyAP_AccountCreation_Visible(AP_AccountCreation.java:25)
+	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),&apos;Your personal information&apos;)]&quot;}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52001}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 20030f95eab9cdba4b37726c4836559e
-*** Element info: {Using=link text, value=Sign in}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: de4abcfaa4ea9c5035085d76195f8583
+*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Your personal information&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -192,8 +239,8 @@ Session ID: 20030f95eab9cdba4b37726c4836559e
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
@@ -205,62 +252,20 @@ Session ID: 20030f95eab9cdba4b37726c4836559e
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-AT_Suite-class-failed -->
-          <div class="suite-AT_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">AP_TestCases.AP_RegressionTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AT_01_NewAccount">
-                  </a> <!-- AT_01_NewAccount -->
-                  <span class="method-name">AT_01_NewAccount</span>
-                  <div class="stack-trace">java.lang.AssertionError: Failed with addFailLog method caught in after test
-	at Utilities.ElementUtil.addFailLog(ElementUtil.java:402)
-	at Utilities.ElementUtil.afterMethod(ElementUtil.java:462)
-	at AP_TestCases.AP_RegressionTest.afterMethod(AP_RegressionTest.java:40)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="AT_01_NewAccount">
-                  </a> <!-- AT_01_NewAccount -->
-                  <span class="method-name">AT_01_NewAccount</span>
-                  <div class="stack-trace">java.lang.AssertionError: Failed with addFailLog method caught in after test
-	at Utilities.ElementUtil.addFailLog(ElementUtil.java:402)
-	at Utilities.ElementUtil.afterMethod(ElementUtil.java:462)
-	at AP_TestCases.AP_RegressionTest.afterMethod(AP_RegressionTest.java:40)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="AT_01_NewAccount">
-                  </a> <!-- AT_01_NewAccount -->
-                  <span class="method-name">AT_01_NewAccount</span>
-                  <div class="stack-trace">java.lang.AssertionError: Failed with addFailLog method caught in after test
-	at Utilities.ElementUtil.addFailLog(ElementUtil.java:402)
-	at Utilities.ElementUtil.afterMethod(ElementUtil.java:462)
-	at AP_TestCases.AP_RegressionTest.afterMethod(AP_RegressionTest.java:40)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AT_Suite-class-skipped -->
           <div class="suite-AT_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">AP_TestCases.AP_RegressionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">
+                  </a> <!-- AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd}) -->
+                  <span class="method-name">AT_01_NewAccount</span>
+                  <span class="parameters">({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">
@@ -330,28 +335,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AT_01_NewAccount')
 data.setCell(0, 2, 'AP_TestCases.AP_RegressionTest')
-data.setCell(0, 3, 37246);
+data.setCell(0, 3, 32045);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'AT_01_NewAccount')
 data.setCell(1, 2, 'AP_TestCases.AP_RegressionTest')
-data.setCell(1, 3, 21105);
+data.setCell(1, 3, 13752);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'AT_01_NewAccount')
 data.setCell(2, 2, 'AP_TestCases.AP_RegressionTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 13144);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'AT_01_NewAccount')
 data.setCell(3, 2, 'AP_TestCases.AP_RegressionTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 1040);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'AT_01_NewAccount')
 data.setCell(4, 2, 'AP_TestCases.AP_RegressionTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 1016);
 window.suiteTableData['AT_Suite']= { tableData: data, tableDiv: 'times-div-AT_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-AT_Suite">
               </div> <!-- times-div-AT_Suite -->
             </div> <!-- times-div -->
@@ -384,67 +389,69 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">1180 ms</span>
+                <span class="method-start">1184 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
-                <span class="method-start">44121 ms</span>
+                <span class="method-start">57122 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=AT_01_NewAccount status=SUCCESS method=AP_RegressionTest.AT_01_NewAccount(java.util...)</span>
-                <span class="method-start">81368 ms</span>
+                <span class="method-start">70267 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">82780 ms</span>
+                <span class="method-start">71792 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
+                <span class="method-start">111569 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AT_01_NewAccount status=SUCCESS method=AP_RegressionTest.AT_01_NewAccount(java.util...)</span>
+                <span class="method-start">125323 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">126308 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
+                <span class="method-start">192239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AT_01_NewAccount status=FAILURE method=AP_RegressionTest.AT_01_NewAccount(java.util...)</span>
+                <span class="method-start">193372 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">194420 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
+                <span class="method-start">260131 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AT_01_NewAccount status=FAILURE method=AP_RegressionTest.AT_01_NewAccount(java.util...)</span>
+                <span class="method-start">292270 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">293249 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
-                <span class="method-start">97353 ms</span>
+                <span class="method-start">358855 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">afterMethod([TestResult name=AT_01_NewAccount status=FAILURE method=AP_RegressionTest.AT_01_NewAccount(java.util...)</span>
-                <span class="method-start">118552 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">BeforeMethod</span>
-                <span class="method-start">119877 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">AT_01_NewAccount</span>
-                <span class="method-start">119877 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">119877 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">BeforeMethod</span>
-                <span class="method-start">119877 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">AT_01_NewAccount</span>
-                <span class="method-start">119877 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">119893 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">BeforeMethod</span>
-                <span class="method-start">119893 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">AT_01_NewAccount</span>
-                <span class="method-start">119893 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">119893 ms</span>
+                <span class="method-start">359934 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -9,7 +9,7 @@
       <class name="AP_TestCases.AP_RegressionTest">
         <methods>
           <include name="setExtent"/>
-          <include name="AT_01_NewAccount" invocation-numbers="1"/>
+          <include name="AT_01_NewAccount" invocation-numbers="2 3 4"/>
           <include name="BeforeMethod"/>
           <include name="afterMethod"/>
         </methods>

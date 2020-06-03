@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" verbose="10" name="Failed suite [Surefire suite]">
-  <test name="Surefire test">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AT_Suite]">
+  <listeners>
+    <listener class-name="Reports.myListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="scripts.DCRM.DCRMScenarios_Test"/>
-      <class name="scripts.ProMS.ProMSScenarios_Test"/>
-    </classes>
-  </test> <!-- Surefire test -->
-  <test name="Surefire test(failed)">
-    <classes>
-      <class name="scripts.DCRM.DCRMScenarios_Test">
+      <class name="AP_TestCases.AP_RegressionTest">
         <methods>
-          <include name="LaunchT2Q"/>
-          <include name="launchReport"/>
-        </methods>
-      </class> <!-- scripts.DCRM.DCRMScenarios_Test -->
-      <class name="scripts.ProMS.ProMSScenarios_Test">
-        <methods>
-          <include name="afterMethod"/>
+          <include name="setExtent"/>
+          <include name="AT_01_NewAccount" invocation-numbers="2 3"/>
           <include name="BeforeMethod"/>
-          <include name="TC_VerifySAPQuoteFieldsInProMS" invocation-numbers="0"/>
-          <include name="LaunchT2Q"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- scripts.ProMS.ProMSScenarios_Test -->
+      </class> <!-- AP_TestCases.AP_RegressionTest -->
     </classes>
-  </test> <!-- Surefire test(failed) -->
-</suite> <!-- Failed suite [Surefire suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [AT_Suite] -->

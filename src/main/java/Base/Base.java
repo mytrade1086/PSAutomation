@@ -38,6 +38,12 @@ static Date date = new Date();
 		if (extent != null) {
 			extent.flush();
 		}
+		
+		if (driver != null) {
+			driver.quit();
+		}
+		
+		
 	}
 
 	public static void initilization() {
