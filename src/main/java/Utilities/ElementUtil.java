@@ -67,17 +67,17 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 	public boolean waitForElementVisibilityByLocator(By byLocator) throws InterruptedException {
 		jsWaitForPageLoad();
 		WebElement placeholder = null;
-		// wait.until(ExpectedConditions.
-
+		
 		placeholder = wait.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
 		if (placeholder == null) {
 			System.out.println(" Element not visible after loading");
+			addFailLog("Element not visible after timeout:"+byLocator.toString());
 			return false;
-		
-		}
-		else {
 			
 		
+		
+		}
+		else {	
 			return true;
 	}
 	}
@@ -297,14 +297,21 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 	}
 
 	public void doClick(By locator, String stepDescription) {
-		// try {
+		 try {
 		getElement(locator).click();
-		// myListener.test.info(stepDescription);
+		 test.info(stepDescription);
 
-		// } catch (Exception e) {
+		} catch (Exception e) {
 		// System.out.println("Some exception occurred while clicking on webelement " +
 		// locator);
-		// }
+		test.log(Status.FAIL, "Some exception occurred while clicking")	;
+		
+		
+		
+			
+	    }
+
+			
 	}
 
 	// Extent Report Method From Anika's Framework

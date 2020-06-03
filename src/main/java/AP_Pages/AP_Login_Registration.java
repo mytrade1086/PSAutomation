@@ -24,8 +24,8 @@ public void enterCreateAccountEmail(String emailAddress) {
 		el.doSendKeys(txt_Email_Create, emailAddress);
 	}
 	
-	public AP_AccountCreation clickCreateAccountbrn(String stepdescription) {
-		el.doClick(txt_Email_Create, stepdescription);		
+	public AP_AccountCreation clickCreateAccountbtn(String stepdescription) {
+		el.doClick(btn_CreateAccount, stepdescription);		
 		return new AP_AccountCreation();
 	}
 
