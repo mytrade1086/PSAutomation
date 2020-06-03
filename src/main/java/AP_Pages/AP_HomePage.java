@@ -14,10 +14,16 @@ public class AP_HomePage extends Base {
 	
 
 //Actions
-
+	public boolean verifyAP_HomePageVisible() throws InterruptedException {
+		return el.waitForElementVisibilityByLocator(lnk_Signin);
+	}
+	
 	public AP_Login_Registration clickSignin(String stepDescription) {
 		el.doClick(lnk_Signin, stepDescription);
 		return new AP_Login_Registration();
 	}
+	
+	
+	
 
 }
