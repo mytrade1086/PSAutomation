@@ -4,3 +4,4 @@
 src/test/resources/Reports
 target/test-classes/Reports
 reports
+/target/
