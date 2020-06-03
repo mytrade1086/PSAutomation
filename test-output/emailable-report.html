@@ -9,49 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">AT_Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">360,711</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">246,732</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AT_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">AP_TestCases.AP_RegressionTest</td><td><a href="#m0">AT_01_NewAccount</a></td><td rowspan="3">1591209203557</td><td rowspan="3">1040</td></tr><tr class="failedeven"><td><a href="#m1">AT_01_NewAccount</a></td></tr><tr class="failedeven"><td><a href="#m2">AT_01_NewAccount</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">AP_TestCases.AP_RegressionTest</td><td><a href="#m3">AT_01_NewAccount</a></td><td rowspan="2">1591209122887</td><td rowspan="2">13752</td></tr><tr class="passedeven"><td><a href="#m4">AT_01_NewAccount</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AT_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">AP_TestCases.AP_RegressionTest</td><td><a href="#m0">AT_01_NewAccount</a></td><td rowspan="2">1591214172088</td><td rowspan="2">27692</td></tr><tr class="failedeven"><td><a href="#m1">AT_01_NewAccount</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">AP_TestCases.AP_RegressionTest</td><td><a href="#m2">AT_01_NewAccount</a></td><td rowspan="3">1591214286571</td><td rowspan="3">13220</td></tr><tr class="passedeven"><td><a href="#m3">AT_01_NewAccount</a></td></tr><tr class="passedeven"><td><a href="#m4">AT_01_NewAccount</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">AP_TestCases.AP_RegressionTest#AT_01_NewAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at Utilities.ElementUtil.waitForElementVisibilityByLocator(ElementUtil.java:70)
-	at AP_Pages.AP_HomePage.verifyAP_HomePageVisible(AP_HomePage.java:18)
-	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:48)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">AP_TestCases.AP_RegressionTest#AT_01_NewAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at Utilities.ElementUtil.waitForElementVisibilityByLocator(ElementUtil.java:70)
-	at AP_Pages.AP_HomePage.verifyAP_HomePageVisible(AP_HomePage.java:18)
-	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:48)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">AP_TestCases.AP_RegressionTest#AT_01_NewAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Your personal information&apos;)] (tried for 20 second(s) with 500 milliseconds interval)
+<h2>Test</h2><h3 id="m0">AP_TestCases.AP_RegressionTest#AT_01_NewAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Your personal information&apos;)] (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at Utilities.ElementUtil.waitForElementVisibilityByLocator(ElementUtil.java:70)
@@ -64,8 +26,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: de4abcfaa4ea9c5035085d76195f8583
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63252}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e89cab68ba95a05b6f8432ee1ad203f2
 *** Element info: {Using=xpath, value=//*[contains(text(),&apos;Your personal information&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -82,6 +44,38 @@ Session ID: de4abcfaa4ea9c5035085d76195f8583
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 31 more
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">AP_TestCases.AP_RegressionTest#AT_01_NewAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Your personal information&apos;)] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Utilities.ElementUtil.waitForElementVisibilityByLocator(ElementUtil.java:70)
+	at AP_Pages.AP_AccountCreation.verifyAP_AccountCreation_Visible(AP_AccountCreation.java:25)
+	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),&apos;Your personal information&apos;)]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63453}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5921594ce6d93f7bd3f97e65211ac705
+*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Your personal information&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">AP_TestCases.AP_RegressionTest#AT_01_NewAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">AP_TestCases.AP_RegressionTest#AT_01_NewAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">AP_TestCases.AP_RegressionTest#AT_01_NewAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

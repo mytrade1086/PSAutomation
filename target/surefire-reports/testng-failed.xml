@@ -6,6 +6,31 @@
   </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
+      <class name="WT_Testcases.WT_RegressionTest">
+        <methods>
+          <include name="setExtent"/>
+          <include name="WT_Register" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="BeforeMethod"/>
+          <include name="myCase" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- WT_Testcases.WT_RegressionTest -->
+      <class name="WT_Testcases.ExtentDemo2">
+        <methods>
+          <include name="setExtent"/>
+          <include name="myCase" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- WT_Testcases.ExtentDemo2 -->
+      <class name="WT_Testcases.ExtentDemo">
+        <methods>
+          <include name="setExtent"/>
+          <include name="myCase" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- WT_Testcases.ExtentDemo -->
       <class name="AP_TestCases.AP_RegressionTest">
         <methods>
           <include name="setExtent"/>

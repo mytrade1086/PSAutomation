@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">9 methods, 6 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -108,6 +108,26 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="AP_TestCases.AP_RegressionTest" hash-for-method="AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})">AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="WT_Testcases.WT_RegressionTest" hash-for-method="WT_Register({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_mon...)">WT_Register({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_mon...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="WT_Testcases.ExtentDemo" hash-for-method="myCase({username=rautsumit, password=rautsumit})">myCase({username=rautsumit, password=rautsumit})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="WT_Testcases.WT_RegressionTest" hash-for-method="myCase({username=rautsumit, password=rautsumit})">myCase({username=rautsumit, password=rautsumit})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AT_Suite" title="WT_Testcases.ExtentDemo2" hash-for-method="myCase({username=rautsumit, password=rautsumit})">myCase({username=rautsumit, password=rautsumit})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-AT_Suite -->
@@ -149,6 +169,94 @@
           <div class="suite-AT_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">WT_Testcases.WT_RegressionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WT_Register({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_mon...)">
+                  </a> <!-- WT_Register({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_mon...) -->
+                  <span class="method-name">WT_Register</span>
+                  <span class="parameters">({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_month=June, departing_day=1, arriving_in=New yok , returning_month=6, returning_day=3, preferences=Business class, airline=Unified Airlines})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
+	at Utilities.ElementUtil.addFailLog(ElementUtil.java:402)
+	at Utilities.ElementUtil.doSendKeys(ElementUtil.java:300)
+	at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
+	at WT_Testcases.WT_RegressionTest.WT_Register(WT_RegressionTest.java:68)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="myCase({username=rautsumit, password=rautsumit})">
+                  </a> <!-- myCase({username=rautsumit, password=rautsumit}) -->
+                  <span class="method-name">myCase</span>
+                  <span class="parameters">({username=rautsumit, password=rautsumit})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
+	at Utilities.ElementUtil.addFailLog(ElementUtil.java:402)
+	at Utilities.ElementUtil.doSendKeys(ElementUtil.java:300)
+	at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
+	at WT_Testcases.WT_RegressionTest.myCase(WT_RegressionTest.java:53)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AT_Suite-class-failed -->
+          <div class="suite-AT_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">WT_Testcases.ExtentDemo2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="myCase({username=rautsumit, password=rautsumit})">
+                  </a> <!-- myCase({username=rautsumit, password=rautsumit}) -->
+                  <span class="method-name">myCase</span>
+                  <span class="parameters">({username=rautsumit, password=rautsumit})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
+	at Utilities.ElementUtil.addFailLog(ElementUtil.java:402)
+	at Utilities.ElementUtil.doSendKeys(ElementUtil.java:300)
+	at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
+	at WT_Testcases.ExtentDemo2.myCase(ExtentDemo2.java:51)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AT_Suite-class-failed -->
+          <div class="suite-AT_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">WT_Testcases.ExtentDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="myCase({username=rautsumit, password=rautsumit})">
+                  </a> <!-- myCase({username=rautsumit, password=rautsumit}) -->
+                  <span class="method-name">myCase</span>
+                  <span class="parameters">({username=rautsumit, password=rautsumit})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
+	at Utilities.ElementUtil.addFailLog(ElementUtil.java:402)
+	at Utilities.ElementUtil.doSendKeys(ElementUtil.java:300)
+	at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
+	at WT_Testcases.ExtentDemo.myCase(ExtentDemo.java:46)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AT_Suite-class-failed -->
+          <div class="suite-AT_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">AP_TestCases.AP_RegressionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -171,8 +279,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8962fbb2021280810bf9de61bbb8801
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9d0196e3b46447f913010661fb76cdf6
 *** Element info: {Using=xpath, value=//*[contains(text(),&apos;Your personal information&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -211,8 +319,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-G0D562V&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59420}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 756a5a7ef5c05bb47445b14c4778e76b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5ae29ba90b2c0baf259e5055beb1afc3
 *** Element info: {Using=xpath, value=//*[contains(text(),&apos;Your personal information&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -282,6 +390,9 @@ Session ID: 756a5a7ef5c05bb47445b14c4778e76b
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;AP_TestCases.AP_RegressionTest&quot;/&gt;
+      &lt;class name=&quot;WT_Testcases.ExtentDemo&quot;/&gt;
+      &lt;class name=&quot;WT_Testcases.ExtentDemo2&quot;/&gt;
+      &lt;class name=&quot;WT_Testcases.WT_RegressionTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- AT_Suite --&gt;
@@ -295,7 +406,7 @@ Session ID: 756a5a7ef5c05bb47445b14c4778e76b
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -321,32 +432,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AT_01_NewAccount')
-data.setCell(0, 2, 'AP_TestCases.AP_RegressionTest')
-data.setCell(0, 3, 27904);
+data.setCell(0, 1, 'myCase')
+data.setCell(0, 2, 'WT_Testcases.WT_RegressionTest')
+data.setCell(0, 3, 41283);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'AT_01_NewAccount')
-data.setCell(1, 2, 'AP_TestCases.AP_RegressionTest')
-data.setCell(1, 3, 27398);
+data.setCell(1, 1, 'myCase')
+data.setCell(1, 2, 'WT_Testcases.ExtentDemo')
+data.setCell(1, 3, 41273);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AT_01_NewAccount')
-data.setCell(2, 2, 'AP_TestCases.AP_RegressionTest')
-data.setCell(2, 3, 11793);
+data.setCell(2, 1, 'WT_Register')
+data.setCell(2, 2, 'WT_Testcases.WT_RegressionTest')
+data.setCell(2, 3, 41273);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AT_01_NewAccount')
-data.setCell(3, 2, 'AP_TestCases.AP_RegressionTest')
-data.setCell(3, 3, 11632);
+data.setCell(3, 1, 'myCase')
+data.setCell(3, 2, 'WT_Testcases.ExtentDemo2')
+data.setCell(3, 3, 41254);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'AT_01_NewAccount')
 data.setCell(4, 2, 'AP_TestCases.AP_RegressionTest')
-data.setCell(4, 3, 9456);
+data.setCell(4, 3, 26941);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'AT_01_NewAccount')
+data.setCell(5, 2, 'AP_TestCases.AP_RegressionTest')
+data.setCell(5, 3, 26887);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'AT_01_NewAccount')
+data.setCell(6, 2, 'AP_TestCases.AP_RegressionTest')
+data.setCell(6, 3, 10054);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'AT_01_NewAccount')
+data.setCell(7, 2, 'AP_TestCases.AP_RegressionTest')
+data.setCell(7, 3, 9975);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'AT_01_NewAccount')
+data.setCell(8, 2, 'AP_TestCases.AP_RegressionTest')
+data.setCell(8, 3, 9226);
 window.suiteTableData['AT_Suite']= { tableData: data, tableDiv: 'times-div-AT_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-AT_Suite">
               </div> <!-- times-div-AT_Suite -->
             </div> <!-- times-div -->
@@ -361,9 +488,30 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-AT_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">WT_Testcases.WT_RegressionTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setExtent</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">WT_Testcases.ExtentDemo2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setExtent</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">WT_Testcases.ExtentDemo</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setExtent</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-AT_Suite" class="panel">
@@ -379,67 +527,132 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">1344 ms</span>
+                <span class="method-start">1188 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
-                <span class="method-start">29761 ms</span>
+                <span class="method-start">33413 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=AT_01_NewAccount status=SUCCESS method=AP_RegressionTest.AT_01_NewAccount(java.util...)</span>
-                <span class="method-start">39217 ms</span>
+                <span class="method-start">43388 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">40466 ms</span>
+                <span class="method-start">44719 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
-                <span class="method-start">68995 ms</span>
+                <span class="method-start">75090 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=AT_01_NewAccount status=SUCCESS method=AP_RegressionTest.AT_01_NewAccount(java.util...)</span>
-                <span class="method-start">80627 ms</span>
+                <span class="method-start">84316 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">81471 ms</span>
+                <span class="method-start">85160 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
-                <span class="method-start">113002 ms</span>
+                <span class="method-start">117093 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=AT_01_NewAccount status=FAILURE method=AP_RegressionTest.AT_01_NewAccount(java.util...)</span>
-                <span class="method-start">140416 ms</span>
+                <span class="method-start">143996 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">141647 ms</span>
+                <span class="method-start">145214 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AT_01_NewAccount({emailaddress=s@s.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
-                <span class="method-start">171746 ms</span>
+                <span class="method-start">172261 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=AT_01_NewAccount status=FAILURE method=AP_RegressionTest.AT_01_NewAccount(java.util...)</span>
-                <span class="method-start">199650 ms</span>
+                <span class="method-start">199217 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeMethod</span>
-                <span class="method-start">200890 ms</span>
+                <span class="method-start">200389 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AT_01_NewAccount({emailaddress=rautsumit@test.com, gender=male, firstname=sumit, lastname=raut, password=pwd})</span>
-                <span class="method-start">251861 ms</span>
+                <span class="method-start">230975 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=AT_01_NewAccount status=SUCCESS method=AP_RegressionTest.AT_01_NewAccount(java.util...)</span>
-                <span class="method-start">263654 ms</span>
+                <span class="method-start">241029 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WT_Testcases.ExtentDemo</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">242013 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">myCase({username=rautsumit, password=rautsumit})</span>
+                <span class="method-start">269980 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=myCase status=FAILURE method=ExtentDemo.myCase(java.util.LinkedHashMap)[pri:0, inst...)</span>
+                <span class="method-start">311253 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WT_Testcases.ExtentDemo2</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">312848 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">myCase({username=rautsumit, password=rautsumit})</span>
+                <span class="method-start">338089 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=myCase status=FAILURE method=ExtentDemo2.myCase(java.util.LinkedHashMap)[pri:0, ins...)</span>
+                <span class="method-start">379343 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">WT_Testcases.WT_RegressionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">380952 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WT_Register({username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_mon...)</span>
+                <span class="method-start">416117 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=WT_Register status=FAILURE method=WT_RegressionTest.WT_Register(java.util.LinkedHas...)</span>
+                <span class="method-start">457390 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">458985 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">myCase({username=rautsumit, password=rautsumit})</span>
+                <span class="method-start">487986 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=myCase status=FAILURE method=WT_RegressionTest.myCase(java.util.LinkedHashMap)[pri:...)</span>
+                <span class="method-start">529269 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

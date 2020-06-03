@@ -9,7 +9,7 @@
       <class name="WT_Testcases.ExtentDemo2">
         <methods>
           <include name="setExtent"/>
-          <include name="myCase" invocation-numbers="0"/>
+          <include name="myCase"/>
           <include name="afterMethod"/>
           <include name="BeforeMethod"/>
         </methods>
@@ -17,11 +17,20 @@
       <class name="WT_Testcases.WT_RegressionTest">
         <methods>
           <include name="setExtent"/>
-          <include name="WT_Register" invocation-numbers="0"/>
+          <include name="WT_Register"/>
+          <include name="afterMethod"/>
+          <include name="BeforeMethod"/>
+          <include name="myCase"/>
+        </methods>
+      </class> <!-- WT_Testcases.WT_RegressionTest -->
+      <class name="WT_Testcases.ExtentDemo">
+        <methods>
+          <include name="setExtent"/>
+          <include name="myCase"/>
           <include name="afterMethod"/>
           <include name="BeforeMethod"/>
         </methods>
-      </class> <!-- WT_Testcases.WT_RegressionTest -->
+      </class> <!-- WT_Testcases.ExtentDemo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

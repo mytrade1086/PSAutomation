@@ -460,13 +460,10 @@ public class ElementUtil extends myListener implements IExtentReportGenericMetho
 				// "+result.getThrowable());
 				
 				//el.addFailLog("caught in after test",  "na");
-				test.error(result.getThrowable());
+				test.error("<br>Error occured after previous step </br> "+result.getThrowable());
 				
 				
-				test.log(Status.FAIL,result.getName()+" failed", MediaEntityBuilder.createScreenCaptureFromPath(el.takeScreenshot("Test Failed")).build());
-				
-				
-				
+				test.log(Status.FAIL,result.getName()+" has failed", MediaEntityBuilder.createScreenCaptureFromPath(el.takeScreenshot("Test Failed")).build());
 				test.fail(MarkupHelper.createLabel("Final Status : Execution Failed", ExtentColor.RED));
 				
 			} else if (result.getStatus() == ITestResult.SKIP) {

@@ -1,21 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+<testng-results skipped="0" failed="6" ignored="3" total="12" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="AT_Suite" duration-ms="264403" started-at="2020-06-04T00:47:41 IST" finished-at="2020-06-04T00:52:05 IST">
+  <suite name="AT_Suite" duration-ms="530637" started-at="2020-06-04T01:07:31 IST" finished-at="2020-06-04T01:16:21 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="264403" started-at="2020-06-04T00:47:41 IST" finished-at="2020-06-04T00:52:05 IST">
+    <test name="Test" duration-ms="530637" started-at="2020-06-04T01:07:31 IST" finished-at="2020-06-04T01:16:21 IST">
+      <class name="WT_Testcases.ExtentDemo">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:WT_Testcases.ExtentDemo@4e1d422d]" name="BeforeMethod" is-config="true" duration-ms="27967" started-at="2020-06-04T01:11:33 IST" finished-at="2020-06-04T01:12:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="FAIL" signature="myCase(java.util.LinkedHashMap)[pri:0, instance:WT_Testcases.ExtentDemo@4e1d422d]" name="myCase" duration-ms="41273" started-at="2020-06-04T01:12:00 IST" data-provider="userData" finished-at="2020-06-04T01:12:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{username=rautsumit, password=rautsumit}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed with addFailLog method rautsumitcould not be entered in inutbox]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
+at org.testng.Assert.fail(Assert.java:97)
+at Utilities.ElementUtil.addFailLog(ElementUtil.java:402)
+at Utilities.ElementUtil.doSendKeys(ElementUtil.java:300)
+at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
+at WT_Testcases.ExtentDemo.myCase(ExtentDemo.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myCase -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:WT_Testcases.ExtentDemo@4e1d422d]" name="afterMethod" is-config="true" duration-ms="1486" started-at="2020-06-04T01:12:42 IST" finished-at="2020-06-04T01:12:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=myCase status=FAILURE method=ExtentDemo.myCase(java.util.LinkedHashMap)[pri:0, instance:WT_Testcases.ExtentDemo@4e1d422d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- WT_Testcases.ExtentDemo -->
+      <class name="WT_Testcases.ExtentDemo2">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:WT_Testcases.ExtentDemo2@66480dd7]" name="BeforeMethod" is-config="true" duration-ms="25240" started-at="2020-06-04T01:12:43 IST" finished-at="2020-06-04T01:13:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="FAIL" signature="myCase(java.util.LinkedHashMap)[pri:0, instance:WT_Testcases.ExtentDemo2@66480dd7]" name="myCase" duration-ms="41254" started-at="2020-06-04T01:13:09 IST" data-provider="userData" finished-at="2020-06-04T01:13:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{username=rautsumit, password=rautsumit}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed with addFailLog method rautsumitcould not be entered in inutbox]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
+at org.testng.Assert.fail(Assert.java:97)
+at Utilities.ElementUtil.addFailLog(ElementUtil.java:402)
+at Utilities.ElementUtil.doSendKeys(ElementUtil.java:300)
+at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
+at WT_Testcases.ExtentDemo2.myCase(ExtentDemo2.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myCase -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:WT_Testcases.ExtentDemo2@66480dd7]" name="afterMethod" is-config="true" duration-ms="1500" started-at="2020-06-04T01:13:50 IST" finished-at="2020-06-04T01:13:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=myCase status=FAILURE method=ExtentDemo2.myCase(java.util.LinkedHashMap)[pri:0, instance:WT_Testcases.ExtentDemo2@66480dd7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- WT_Testcases.ExtentDemo2 -->
       <class name="AP_TestCases.AP_RegressionTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="setExtent" is-config="true" duration-ms="204" started-at="2020-06-04T00:47:41 IST" finished-at="2020-06-04T00:47:41 IST">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="setExtent" is-config="true" duration-ms="157" started-at="2020-06-04T01:07:31 IST" finished-at="2020-06-04T01:07:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="BeforeMethod" is-config="true" duration-ms="28415" started-at="2020-06-04T00:47:42 IST" finished-at="2020-06-04T00:48:11 IST">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="BeforeMethod" is-config="true" duration-ms="32224" started-at="2020-06-04T01:07:32 IST" finished-at="2020-06-04T01:08:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="AT_01_NewAccount" duration-ms="9456" started-at="2020-06-04T00:48:11 IST" data-provider="userData" finished-at="2020-06-04T00:48:20 IST">
+        <test-method status="PASS" signature="AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="AT_01_NewAccount" duration-ms="9975" started-at="2020-06-04T01:08:04 IST" data-provider="userData" finished-at="2020-06-04T01:08:14 IST">
           <params>
             <param index="0">
               <value>
@@ -26,22 +174,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AT_01_NewAccount -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="afterMethod" is-config="true" duration-ms="1249" started-at="2020-06-04T00:48:20 IST" finished-at="2020-06-04T00:48:21 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="afterMethod" is-config="true" duration-ms="1331" started-at="2020-06-04T01:08:14 IST" finished-at="2020-06-04T01:08:15 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AT_01_NewAccount status=SUCCESS method=AP_RegressionTest.AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4] output={null}]]]>
+                <![CDATA[[TestResult name=AT_01_NewAccount status=SUCCESS method=AP_RegressionTest.AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="BeforeMethod" is-config="true" duration-ms="28529" started-at="2020-06-04T00:48:21 IST" finished-at="2020-06-04T00:48:50 IST">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="BeforeMethod" is-config="true" duration-ms="30370" started-at="2020-06-04T01:08:15 IST" finished-at="2020-06-04T01:08:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="AT_01_NewAccount" duration-ms="11632" started-at="2020-06-04T00:48:50 IST" data-provider="userData" finished-at="2020-06-04T00:49:01 IST">
+        <test-method status="PASS" signature="AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="AT_01_NewAccount" duration-ms="9226" started-at="2020-06-04T01:08:46 IST" data-provider="userData" finished-at="2020-06-04T01:08:55 IST">
           <params>
             <param index="0">
               <value>
@@ -52,22 +200,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AT_01_NewAccount -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="afterMethod" is-config="true" duration-ms="844" started-at="2020-06-04T00:49:01 IST" finished-at="2020-06-04T00:49:02 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="afterMethod" is-config="true" duration-ms="844" started-at="2020-06-04T01:08:55 IST" finished-at="2020-06-04T01:08:56 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AT_01_NewAccount status=SUCCESS method=AP_RegressionTest.AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4] output={null}]]]>
+                <![CDATA[[TestResult name=AT_01_NewAccount status=SUCCESS method=AP_RegressionTest.AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="BeforeMethod" is-config="true" duration-ms="31531" started-at="2020-06-04T00:49:02 IST" finished-at="2020-06-04T00:49:34 IST">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="BeforeMethod" is-config="true" duration-ms="31933" started-at="2020-06-04T01:08:56 IST" finished-at="2020-06-04T01:09:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="FAIL" signature="AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="AT_01_NewAccount" duration-ms="27398" started-at="2020-06-04T00:49:34 IST" data-provider="userData" finished-at="2020-06-04T00:50:01 IST">
+        <test-method status="FAIL" signature="AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="AT_01_NewAccount" duration-ms="26887" started-at="2020-06-04T01:09:28 IST" data-provider="userData" finished-at="2020-06-04T01:09:54 IST">
           <params>
             <param index="0">
               <value>
@@ -124,8 +272,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-G0D562V', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8962fbb2021280810bf9de61bbb8801
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9d0196e3b46447f913010661fb76cdf6
 *** Element info: {Using=xpath, value=//*[contains(text(),'Your personal information')]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -151,22 +299,22 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AT_01_NewAccount -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="afterMethod" is-config="true" duration-ms="1231" started-at="2020-06-04T00:50:01 IST" finished-at="2020-06-04T00:50:02 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="afterMethod" is-config="true" duration-ms="1218" started-at="2020-06-04T01:09:55 IST" finished-at="2020-06-04T01:09:56 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AT_01_NewAccount status=FAILURE method=AP_RegressionTest.AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4] output={null}]]]>
+                <![CDATA[[TestResult name=AT_01_NewAccount status=FAILURE method=AP_RegressionTest.AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="BeforeMethod" is-config="true" duration-ms="30099" started-at="2020-06-04T00:50:02 IST" finished-at="2020-06-04T00:50:32 IST">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="BeforeMethod" is-config="true" duration-ms="27047" started-at="2020-06-04T01:09:56 IST" finished-at="2020-06-04T01:10:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="FAIL" signature="AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="AT_01_NewAccount" duration-ms="27904" started-at="2020-06-04T00:50:32 IST" data-provider="userData" finished-at="2020-06-04T00:51:00 IST">
+        <test-method status="FAIL" signature="AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="AT_01_NewAccount" duration-ms="26941" started-at="2020-06-04T01:10:23 IST" data-provider="userData" finished-at="2020-06-04T01:10:50 IST">
           <params>
             <param index="0">
               <value>
@@ -223,8 +371,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-G0D562V', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59420}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 756a5a7ef5c05bb47445b14c4778e76b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5ae29ba90b2c0baf259e5055beb1afc3
 *** Element info: {Using=xpath, value=//*[contains(text(),'Your personal information')]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -250,22 +398,22 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AT_01_NewAccount -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="afterMethod" is-config="true" duration-ms="1240" started-at="2020-06-04T00:51:00 IST" finished-at="2020-06-04T00:51:02 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="afterMethod" is-config="true" duration-ms="1172" started-at="2020-06-04T01:10:50 IST" finished-at="2020-06-04T01:10:51 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AT_01_NewAccount status=FAILURE method=AP_RegressionTest.AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4] output={null}]]]>
+                <![CDATA[[TestResult name=AT_01_NewAccount status=FAILURE method=AP_RegressionTest.AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="BeforeMethod" is-config="true" duration-ms="50970" started-at="2020-06-04T00:51:02 IST" finished-at="2020-06-04T00:51:53 IST">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="BeforeMethod" is-config="true" duration-ms="30586" started-at="2020-06-04T01:10:51 IST" finished-at="2020-06-04T01:11:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="AT_01_NewAccount" duration-ms="11793" started-at="2020-06-04T00:51:53 IST" data-provider="userData" finished-at="2020-06-04T00:52:04 IST">
+        <test-method status="PASS" signature="AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="AT_01_NewAccount" duration-ms="10054" started-at="2020-06-04T01:11:21 IST" data-provider="userData" finished-at="2020-06-04T01:11:32 IST">
           <params>
             <param index="0">
               <value>
@@ -276,11 +424,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AT_01_NewAccount -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4]" name="afterMethod" is-config="true" duration-ms="953" started-at="2020-06-04T00:52:04 IST" finished-at="2020-06-04T00:52:05 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23]" name="afterMethod" is-config="true" duration-ms="859" started-at="2020-06-04T01:11:32 IST" finished-at="2020-06-04T01:11:32 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AT_01_NewAccount status=SUCCESS method=AP_RegressionTest.AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@71318ec4] output={null}]]]>
+                <![CDATA[[TestResult name=AT_01_NewAccount status=SUCCESS method=AP_RegressionTest.AT_01_NewAccount(java.util.LinkedHashMap)[pri:0, instance:AP_TestCases.AP_RegressionTest@3327bd23] output={null}]]]>
               </value>
             </param>
           </params>
@@ -288,6 +436,152 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- AP_TestCases.AP_RegressionTest -->
+      <class name="WT_Testcases.WT_RegressionTest">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:WT_Testcases.WT_RegressionTest@52a86356]" name="BeforeMethod" is-config="true" duration-ms="35165" started-at="2020-06-04T01:13:51 IST" finished-at="2020-06-04T01:14:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="FAIL" signature="WT_Register(java.util.LinkedHashMap)[pri:0, instance:WT_Testcases.WT_RegressionTest@52a86356]" name="WT_Register" duration-ms="41273" started-at="2020-06-04T01:14:27 IST" data-provider="userData" finished-at="2020-06-04T01:15:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_month=June, departing_day=1, arriving_in=New yok , returning_month=6, returning_day=3, preferences=Business class, airline=Unified Airlines}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed with addFailLog method rautsumitcould not be entered in inutbox]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
+at org.testng.Assert.fail(Assert.java:97)
+at Utilities.ElementUtil.addFailLog(ElementUtil.java:402)
+at Utilities.ElementUtil.doSendKeys(ElementUtil.java:300)
+at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
+at WT_Testcases.WT_RegressionTest.WT_Register(WT_RegressionTest.java:68)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WT_Register -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:WT_Testcases.WT_RegressionTest@52a86356]" name="afterMethod" is-config="true" duration-ms="1517" started-at="2020-06-04T01:15:08 IST" finished-at="2020-06-04T01:15:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=WT_Register status=FAILURE method=WT_RegressionTest.WT_Register(java.util.LinkedHashMap)[pri:0, instance:WT_Testcases.WT_RegressionTest@52a86356] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:WT_Testcases.WT_RegressionTest@52a86356]" name="BeforeMethod" is-config="true" duration-ms="29001" started-at="2020-06-04T01:15:09 IST" finished-at="2020-06-04T01:15:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="FAIL" signature="myCase(java.util.LinkedHashMap)[pri:0, instance:WT_Testcases.WT_RegressionTest@52a86356]" name="myCase" duration-ms="41283" started-at="2020-06-04T01:15:38 IST" data-provider="userData" finished-at="2020-06-04T01:16:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{username=rautsumit, password=rautsumit}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed with addFailLog method rautsumitcould not be entered in inutbox]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
+at org.testng.Assert.fail(Assert.java:97)
+at Utilities.ElementUtil.addFailLog(ElementUtil.java:402)
+at Utilities.ElementUtil.doSendKeys(ElementUtil.java:300)
+at WT_Pages.WT_LoginPage.enterUsername(WT_LoginPage.java:28)
+at WT_Testcases.WT_RegressionTest.myCase(WT_RegressionTest.java:53)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myCase -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:WT_Testcases.WT_RegressionTest@52a86356]" name="afterMethod" is-config="true" duration-ms="1525" started-at="2020-06-04T01:16:20 IST" finished-at="2020-06-04T01:16:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=myCase status=FAILURE method=WT_RegressionTest.myCase(java.util.LinkedHashMap)[pri:0, instance:WT_Testcases.WT_RegressionTest@52a86356] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- WT_Testcases.WT_RegressionTest -->
     </test> <!-- Test -->
   </suite> <!-- AT_Suite -->
 </testng-results>
