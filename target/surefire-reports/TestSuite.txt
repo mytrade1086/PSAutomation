@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 532.278 s <<< FAILURE! - in TestSuite
-AT_01_NewAccount(AP_TestCases.AP_RegressionTest)  Time elapsed: 26.895 s  <<< FAILURE!
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 243.351 s <<< FAILURE! - in TestSuite
+AT_01_NewAccount(AP_TestCases.AP_RegressionTest)  Time elapsed: 27.842 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Your personal information')] (tried for 20 second(s) with 500 milliseconds interval)
 	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -12,12 +12,12 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-G0D562V', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9d0196e3b46447f913010661fb76cdf6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b715130e3ddbf46c8fa220861a38c0ee
 *** Element info: {Using=xpath, value=//*[contains(text(),'Your personal information')]}
 	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
 
-AT_01_NewAccount(AP_TestCases.AP_RegressionTest)  Time elapsed: 26.947 s  <<< FAILURE!
+AT_01_NewAccount(AP_TestCases.AP_RegressionTest)  Time elapsed: 27.204 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Your personal information')] (tried for 20 second(s) with 500 milliseconds interval)
 	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -27,24 +27,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-G0D562V', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5ae29ba90b2c0baf259e5055beb1afc3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4d72a4a102c273307676267fd4b3c0fa
 *** Element info: {Using=xpath, value=//*[contains(text(),'Your personal information')]}
 	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
-
-myCase(WT_Testcases.ExtentDemo)  Time elapsed: 41.28 s  <<< FAILURE!
-java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
-	at WT_Testcases.ExtentDemo.myCase(ExtentDemo.java:46)
-
-myCase(WT_Testcases.ExtentDemo2)  Time elapsed: 41.261 s  <<< FAILURE!
-java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
-	at WT_Testcases.ExtentDemo2.myCase(ExtentDemo2.java:51)
-
-WT_Register(WT_Testcases.WT_RegressionTest)  Time elapsed: 41.257 s  <<< FAILURE!
-java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
-	at WT_Testcases.WT_RegressionTest.WT_Register(WT_RegressionTest.java:68)
-
-myCase(WT_Testcases.WT_RegressionTest)  Time elapsed: 41.292 s  <<< FAILURE!
-java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
-	at WT_Testcases.WT_RegressionTest.myCase(WT_RegressionTest.java:53)
 

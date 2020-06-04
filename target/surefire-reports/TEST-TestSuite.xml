@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="532.278" tests="9" errors="0" skipped="0" failures="6">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="243.351" tests="5" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\sunshine\AppData\Local\Temp\surefire5485952906033467505\surefirebooter2421316000077000702.jar C:\Users\sunshine\AppData\Local\Temp\surefire5485952906033467505 2020-06-04T01-07-28_143-jvmRun1 surefire2366032713499447004tmp surefire_03902990451808771071tmp"/>
+    <property name="sun.java.command" value="C:\Users\sunshine\AppData\Local\Temp\surefire2450945080033829278\surefirebooter3326021116351788311.jar C:\Users\sunshine\AppData\Local\Temp\surefire2450945080033829278 2020-06-04T01-33-02_240-jvmRun1 surefire4386133093691699331tmp surefire_08253345653049591592tmp"/>
     <property name="surefire.test.class.path" value="H:\ProMSAutomation\target\test-classes;H:\ProMSAutomation\target\classes;C:\Users\sunshine\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\sunshine\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\sunshine\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\sunshine\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\sunshine\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\sunshine\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\sunshine\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\sunshine\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\sunshine\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\sunshine\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\sunshine\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\sunshine\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\sunshine\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\sunshine\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\sunshine\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\sunshine\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\sunshine\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\sunshine\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\sunshine\.m2\repository\io\github\bonigarcia\webdrivermanager\3.7.1\webdrivermanager-3.7.1.jar;C:\Users\sunshine\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\sunshine\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\sunshine\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\sunshine\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\sunshine\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\sunshine\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\sunshine\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sunshine\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\sunshine\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\sunshine\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\sunshine\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\sunshine\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\sunshine\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\sunshine\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\sunshine\.m2\repository\org\apache\commons\commons-text\1.8\commons-text-1.8.jar;C:\Users\sunshine\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\sunshine\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\sunshine\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\sunshine\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\sunshine\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\sunshine\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\sunshine\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;C:\Users\sunshine\.m2\repository\com\cedarsoft\commons\io\8.5.1\io-8.5.1.jar;C:\Users\sunshine\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sunshine\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\sunshine\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\sunshine\.m2\repository\org\assertj\assertj-core\3.9.0\assertj-core-3.9.0.jar;C:\Users\sunshine\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jre8\1.2.20\kotlin-stdlib-jre8-1.2.20.jar;C:\Users\sunshine\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.2.20\kotlin-stdlib-1.2.20.jar;C:\Users\sunshine\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\sunshine\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jre7\1.2.20\kotlin-stdlib-jre7-1.2.20.jar;C:\Users\sunshine\.m2\repository\org\jetbrains\kotlin\kotlin-reflect\1.2.20\kotlin-reflect-1.2.20.jar;C:\Users\sunshine\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Users\sunshine\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\sunshine\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Users\sunshine\.m2\repository\org\apache\poi\poi-ooxml\3.15\poi-ooxml-3.15.jar;C:\Users\sunshine\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.15\poi-ooxml-schemas-3.15.jar;C:\Users\sunshine\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\sunshine\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\sunshine\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Users\sunshine\.m2\repository\org\apache\commons\commons-email\1.2\commons-email-1.2.jar;C:\Users\sunshine\.m2\repository\javax\mail\mail\1.4.1\mail-1.4.1.jar;C:\Users\sunshine\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\sunshine\.m2\repository\com\github\2gis\winium\winium-webdriver\0.1.0-1\winium-webdriver-0.1.0-1.jar;C:\Users\sunshine\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\Users\sunshine\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\sunshine"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\sunshine\AppData\Local\Temp\surefire5485952906033467505\surefirebooter2421316000077000702.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\sunshine\AppData\Local\Temp\surefire2450945080033829278\surefirebooter3326021116351788311.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,9 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="AT_01_NewAccount" classname="AP_TestCases.AP_RegressionTest" time="9.964"/>
-  <testcase name="AT_01_NewAccount" classname="AP_TestCases.AP_RegressionTest" time="9.22"/>
-  <testcase name="AT_01_NewAccount" classname="AP_TestCases.AP_RegressionTest" time="26.895">
+  <testcase name="AT_01_NewAccount" classname="AP_TestCases.AP_RegressionTest" time="9.515"/>
+  <testcase name="AT_01_NewAccount" classname="AP_TestCases.AP_RegressionTest" time="10.975"/>
+  <testcase name="AT_01_NewAccount" classname="AP_TestCases.AP_RegressionTest" time="27.842">
     <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Your personal information&apos;)] (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Your personal information')] (tried for 20 second(s) with 500 milliseconds interval)
 	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -72,8 +72,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-G0D562V', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9d0196e3b46447f913010661fb76cdf6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b715130e3ddbf46c8fa220861a38c0ee
 *** Element info: {Using=xpath, value=//*[contains(text(),'Your personal information')]}
 	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
 </failure>
@@ -82,17 +82,17 @@ Inside aftermethod
 Teardown Performed
 Initilization Code Executed
 ***Launch Application*****
-Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\Register Page checkpoint04-6-2020 01_09_33.png
+Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\Register Page checkpoint04-6-2020 01_35_05.png
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 37459
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 10552
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 04, 2020 1:08:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 04, 2020 1:34:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AT_01_NewAccount" classname="AP_TestCases.AP_RegressionTest" time="26.947">
+  <testcase name="AT_01_NewAccount" classname="AP_TestCases.AP_RegressionTest" time="27.204">
     <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Your personal information&apos;)] (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Your personal information')] (tried for 20 second(s) with 500 milliseconds interval)
 	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -102,625 +102,26 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-G0D562V', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5ae29ba90b2c0baf259e5055beb1afc3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\sunshine\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4d72a4a102c273307676267fd4b3c0fa
 *** Element info: {Using=xpath, value=//*[contains(text(),'Your personal information')]}
 	at AP_TestCases.AP_RegressionTest.AT_01_NewAccount(AP_RegressionTest.java:54)
 </failure>
     <system-out><![CDATA[Inside aftermethod
 Inside aftermethod
-Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\Test Failed04-6-2020 01_09_55.png
+Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\Test Failed04-6-2020 01_35_27.png
 Teardown Performed
 Initilization Code Executed
 ***Launch Application*****
-Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\Register Page checkpoint04-6-2020 01_10_28.png
+Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\Register Page checkpoint04-6-2020 01_36_02.png
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 13092
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 22842
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 04, 2020 1:09:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 04, 2020 1:35:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="AT_01_NewAccount" classname="AP_TestCases.AP_RegressionTest" time="10.063"/>
-  <testcase name="myCase" classname="WT_Testcases.ExtentDemo" time="41.28">
-    <failure message="Failed with addFailLog method rautsumitcould not be entered in inutbox" type="java.lang.AssertionError">java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
-	at WT_Testcases.ExtentDemo.myCase(ExtentDemo.java:46)
-</failure>
-    <system-out><![CDATA[Inside aftermethod
-Inside aftermethod
-Teardown Performed
-strCellVal : Variable
-strCellVal : Value
-strCellVal : ApplicationName
-strCellVal : WebTours
-strCellVal : ApplicationEnvironment
-strCellVal : UAT
-strCellVal : SendTo
-strCellVal : sshetty9@ra.rockwell.com
-strCellVal : SendCC
-strCellVal : 
-strCellVal : Sprint
-strCellVal : 0.0
-strCellVal : LaunchReport
-strCellVal : Yes
-test case name is myCase
-rowCount is 31
-strCellVal : Prerequisite - Date Format - DD/MM/YYYY
-tstName: Prerequisite - Date Format - DD/MM/YYYY0
-strCellVal : AT_01_NewAccount
-tstName: AT_01_NewAccount1
-strCellVal : 
-tstName: 2
-strCellVal : 
-tstName: 3
-strCellVal : 
-tstName: 4
-strCellVal : 
-tstName: 5
-strCellVal : 
-tstName: 6
-strCellVal : 
-tstName: 7
-strCellVal : 
-tstName: 8
-strCellVal : 
-tstName: 9
-strCellVal : 
-tstName: 10
-strCellVal : 
-tstName: 11
-strCellVal : myCase
-tstName: myCase12
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : myCase2
-getDataRowCount returns6
-strCellVal : 1.0
-strCellVal : 1.0
-strCellVal : myCase
-strCellVal : myCase
-strCellVal : Execute
-strCellVal : Execute
-strCellVal : username
-strCellVal : username
-strCellVal : username
-strCellVal : password
-strCellVal : password
-strCellVal : password
-strCellVal : 
-strCellVal : 
-getColCountForRow returns5
-strCellVal : yes
-strCellVal : rautsumit
-strCellVal : rautsumit
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : no
-strCellVal : rautsumit2
-strCellVal : rautsumit
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : no
-strCellVal : rautsumit
-strCellVal : rautsumit
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : yes
-strCellVal : yes
-excelData[0][0]=yes
-strCellVal : rautsumit
-strCellVal : 
-excelData[0][1]=rautsumit
-strCellVal : rautsumit
-strCellVal : 
-excelData[0][2]=rautsumit
-strCellVal : 
-strCellVal : no
-strCellVal : 
-strCellVal : no
-strCellVal : 
-demo line
-demo line2
-Initilization Code Executed
-***Launch Application*****
-{username=rautsumit, password=rautsumit}
-el value is Utilities.ElementUtil@4d18b73a
-Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\rautsumitcould not be entered in inutbox04-6-2020 01_12_42.png
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 16097
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jun 04, 2020 1:11:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="myCase" classname="WT_Testcases.ExtentDemo2" time="41.261">
-    <failure message="Failed with addFailLog method rautsumitcould not be entered in inutbox" type="java.lang.AssertionError">java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
-	at WT_Testcases.ExtentDemo2.myCase(ExtentDemo2.java:51)
-</failure>
-    <system-out><![CDATA[Inside aftermethod
-Inside aftermethod
-Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\Test Failed04-6-2020 01_12_42.png
-Teardown Performed
-strCellVal : Variable
-strCellVal : Value
-strCellVal : ApplicationName
-strCellVal : WebTours
-strCellVal : ApplicationEnvironment
-strCellVal : UAT
-strCellVal : SendTo
-strCellVal : sshetty9@ra.rockwell.com
-strCellVal : SendCC
-strCellVal : 
-strCellVal : Sprint
-strCellVal : 0.0
-strCellVal : LaunchReport
-strCellVal : Yes
-test case name is myCase
-rowCount is 31
-strCellVal : Prerequisite - Date Format - DD/MM/YYYY
-tstName: Prerequisite - Date Format - DD/MM/YYYY0
-strCellVal : AT_01_NewAccount
-tstName: AT_01_NewAccount1
-strCellVal : 
-tstName: 2
-strCellVal : 
-tstName: 3
-strCellVal : 
-tstName: 4
-strCellVal : 
-tstName: 5
-strCellVal : 
-tstName: 6
-strCellVal : 
-tstName: 7
-strCellVal : 
-tstName: 8
-strCellVal : 
-tstName: 9
-strCellVal : 
-tstName: 10
-strCellVal : 
-tstName: 11
-strCellVal : myCase
-tstName: myCase12
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : myCase2
-getDataRowCount returns6
-strCellVal : 1.0
-strCellVal : 1.0
-strCellVal : myCase
-strCellVal : myCase
-strCellVal : Execute
-strCellVal : Execute
-strCellVal : username
-strCellVal : username
-strCellVal : username
-strCellVal : password
-strCellVal : password
-strCellVal : password
-strCellVal : 
-strCellVal : 
-getColCountForRow returns5
-strCellVal : yes
-strCellVal : rautsumit
-strCellVal : rautsumit
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : no
-strCellVal : rautsumit2
-strCellVal : rautsumit
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : no
-strCellVal : rautsumit
-strCellVal : rautsumit
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : yes
-strCellVal : yes
-excelData[0][0]=yes
-strCellVal : rautsumit
-strCellVal : 
-excelData[0][1]=rautsumit
-strCellVal : rautsumit
-strCellVal : 
-excelData[0][2]=rautsumit
-strCellVal : 
-strCellVal : no
-strCellVal : 
-strCellVal : no
-strCellVal : 
-demo line
-demo line2
-Initilization Code Executed
-***Launch Application*****
-{username=rautsumit, password=rautsumit}
-el value is Utilities.ElementUtil@61f6d381
-Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\rautsumitcould not be entered in inutbox04-6-2020 01_13_50.png
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 28868
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jun 04, 2020 1:12:47 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="WT_Register" classname="WT_Testcases.WT_RegressionTest" time="41.257">
-    <failure message="Failed with addFailLog method rautsumitcould not be entered in inutbox" type="java.lang.AssertionError">java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
-	at WT_Testcases.WT_RegressionTest.WT_Register(WT_RegressionTest.java:68)
-</failure>
-    <system-out><![CDATA[Inside aftermethod
-Inside aftermethod
-Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\Test Failed04-6-2020 01_13_51.png
-Teardown Performed
-strCellVal : Variable
-strCellVal : Value
-strCellVal : ApplicationName
-strCellVal : WebTours
-strCellVal : ApplicationEnvironment
-strCellVal : UAT
-strCellVal : SendTo
-strCellVal : sshetty9@ra.rockwell.com
-strCellVal : SendCC
-strCellVal : 
-strCellVal : Sprint
-strCellVal : 0.0
-strCellVal : LaunchReport
-strCellVal : Yes
-test case name is WT_Register
-rowCount is 31
-strCellVal : Prerequisite - Date Format - DD/MM/YYYY
-tstName: Prerequisite - Date Format - DD/MM/YYYY0
-strCellVal : AT_01_NewAccount
-tstName: AT_01_NewAccount1
-strCellVal : 
-tstName: 2
-strCellVal : 
-tstName: 3
-strCellVal : 
-tstName: 4
-strCellVal : 
-tstName: 5
-strCellVal : 
-tstName: 6
-strCellVal : 
-tstName: 7
-strCellVal : 
-tstName: 8
-strCellVal : 
-tstName: 9
-strCellVal : 
-tstName: 10
-strCellVal : 
-tstName: 11
-strCellVal : myCase
-tstName: myCase12
-strCellVal : 
-tstName: 13
-strCellVal : 
-tstName: 14
-strCellVal : 
-tstName: 15
-strCellVal : 
-tstName: 16
-strCellVal : 
-tstName: 17
-strCellVal : 
-tstName: 18
-strCellVal : myCase2
-tstName: myCase219
-strCellVal : 
-tstName: 20
-strCellVal : 
-tstName: 21
-strCellVal : 
-tstName: 22
-strCellVal : 
-tstName: 23
-strCellVal : 
-tstName: 24
-strCellVal : 
-tstName: 25
-strCellVal : WT_Register
-tstName: WT_Register26
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-getDataRowCount returns4
-strCellVal : 3.0
-strCellVal : 3.0
-strCellVal : WT_Register
-strCellVal : WT_Register
-strCellVal : Execute
-strCellVal : Execute
-strCellVal : username
-strCellVal : username
-strCellVal : username
-strCellVal : password
-strCellVal : password
-strCellVal : password
-strCellVal : type
-strCellVal : type
-strCellVal : type
-strCellVal : passengers
-strCellVal : passengers
-strCellVal : passengers
-strCellVal : departing_from
-strCellVal : departing_from
-strCellVal : departing_from
-strCellVal : departing_month
-strCellVal : departing_month
-strCellVal : departing_month
-strCellVal : departing_day
-strCellVal : departing_day
-strCellVal : departing_day
-strCellVal : arriving_in
-strCellVal : arriving_in
-strCellVal : arriving_in
-strCellVal : returning_month
-strCellVal : returning_month
-strCellVal : returning_month
-strCellVal : returning_day
-strCellVal : returning_day
-strCellVal : returning_day
-strCellVal : preferences
-strCellVal : preferences
-strCellVal : preferences
-strCellVal : airline
-strCellVal : airline
-strCellVal : airline
-strCellVal : 
-strCellVal : 
-getColCountForRow returns15
-strCellVal : Yes
-strCellVal : rautsumit
-strCellVal : rautsumit
-strCellVal : na
-strCellVal : 2
-strCellVal : London
-strCellVal : June
-strCellVal : 1
-strCellVal : New yok 
-strCellVal : 6
-strCellVal : 3
-strCellVal : Business class
-strCellVal : Unified Airlines
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : no
-strCellVal : rautsumit
-strCellVal : rautsumit
-strCellVal : na
-strCellVal : 3
-strCellVal : London
-strCellVal : June
-strCellVal : 1
-strCellVal : New yok 
-strCellVal : 6
-strCellVal : 3
-strCellVal : Business class
-strCellVal : Unified Airlines
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : Yes
-strCellVal : Yes
-excelData[0][0]=Yes
-strCellVal : rautsumit
-strCellVal : 
-excelData[0][1]=rautsumit
-strCellVal : rautsumit
-strCellVal : 
-excelData[0][2]=rautsumit
-strCellVal : na
-strCellVal : 
-excelData[0][3]=na
-strCellVal : 2
-strCellVal : 
-excelData[0][4]=2
-strCellVal : London
-strCellVal : 
-excelData[0][5]=London
-strCellVal : June
-strCellVal : 
-excelData[0][6]=June
-strCellVal : 1
-strCellVal : 
-excelData[0][7]=1
-strCellVal : New yok 
-strCellVal : 
-excelData[0][8]=New yok 
-strCellVal : 6
-strCellVal : 
-excelData[0][9]=6
-strCellVal : 3
-strCellVal : 
-excelData[0][10]=3
-strCellVal : Business class
-strCellVal : 
-excelData[0][11]=Business class
-strCellVal : Unified Airlines
-strCellVal : 
-excelData[0][12]=Unified Airlines
-strCellVal : 
-strCellVal : no
-strCellVal : 
-demo line
-demo line2
-Initilization Code Executed
-***Launch Application*****
-{username=rautsumit, password=rautsumit, type=na, passengers=2, departing_from=London, departing_month=June, departing_day=1, arriving_in=New yok , returning_month=6, returning_day=3, preferences=Business class, airline=Unified Airlines}
-el value is Utilities.ElementUtil@75e27856
-Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\rautsumitcould not be entered in inutbox04-6-2020 01_15_08.png
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 5263
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jun 04, 2020 1:13:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="myCase" classname="WT_Testcases.WT_RegressionTest" time="41.292">
-    <failure message="Failed with addFailLog method rautsumitcould not be entered in inutbox" type="java.lang.AssertionError">java.lang.AssertionError: Failed with addFailLog method rautsumitcould not be entered in inutbox
-	at WT_Testcases.WT_RegressionTest.myCase(WT_RegressionTest.java:53)
-</failure>
-    <system-out><![CDATA[Inside aftermethod
-Inside aftermethod
-Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\Test Failed04-6-2020 01_15_09.png
-Teardown Performed
-strCellVal : Variable
-strCellVal : Value
-strCellVal : ApplicationName
-strCellVal : WebTours
-strCellVal : ApplicationEnvironment
-strCellVal : UAT
-strCellVal : SendTo
-strCellVal : sshetty9@ra.rockwell.com
-strCellVal : SendCC
-strCellVal : 
-strCellVal : Sprint
-strCellVal : 0.0
-strCellVal : LaunchReport
-strCellVal : Yes
-test case name is myCase
-rowCount is 31
-strCellVal : Prerequisite - Date Format - DD/MM/YYYY
-tstName: Prerequisite - Date Format - DD/MM/YYYY0
-strCellVal : AT_01_NewAccount
-tstName: AT_01_NewAccount1
-strCellVal : 
-tstName: 2
-strCellVal : 
-tstName: 3
-strCellVal : 
-tstName: 4
-strCellVal : 
-tstName: 5
-strCellVal : 
-tstName: 6
-strCellVal : 
-tstName: 7
-strCellVal : 
-tstName: 8
-strCellVal : 
-tstName: 9
-strCellVal : 
-tstName: 10
-strCellVal : 
-tstName: 11
-strCellVal : myCase
-tstName: myCase12
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : myCase2
-getDataRowCount returns6
-strCellVal : 1.0
-strCellVal : 1.0
-strCellVal : myCase
-strCellVal : myCase
-strCellVal : Execute
-strCellVal : Execute
-strCellVal : username
-strCellVal : username
-strCellVal : username
-strCellVal : password
-strCellVal : password
-strCellVal : password
-strCellVal : 
-strCellVal : 
-getColCountForRow returns5
-strCellVal : yes
-strCellVal : rautsumit
-strCellVal : rautsumit
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : no
-strCellVal : rautsumit2
-strCellVal : rautsumit
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : no
-strCellVal : rautsumit
-strCellVal : rautsumit
-strCellVal : 
-strCellVal : 
-strCellVal : 
-strCellVal : yes
-strCellVal : yes
-excelData[0][0]=yes
-strCellVal : rautsumit
-strCellVal : 
-excelData[0][1]=rautsumit
-strCellVal : rautsumit
-strCellVal : 
-excelData[0][2]=rautsumit
-strCellVal : 
-strCellVal : no
-strCellVal : 
-strCellVal : no
-strCellVal : 
-demo line
-demo line2
-Initilization Code Executed
-***Launch Application*****
-el value is Utilities.ElementUtil@1fedf0a4
-Screenshot Path ISSSSSSS: H:\ProMSAutomation\reports\ExtentScreenshots\rautsumitcould not be entered in inutbox04-6-2020 01_16_20.png
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 24808
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jun 04, 2020 1:15:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
+  <testcase name="AT_01_NewAccount" classname="AP_TestCases.AP_RegressionTest" time="10.964"/>
 </testsuite>
